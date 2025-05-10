@@ -2,9 +2,13 @@ let menu = document.querySelector(".menu_bar");
 
 menu.onclick = function(){
     if($("#checkbox").is(":checked")){
-        $(".vh100").slideDown();
+        $(".contact").slideDown();
+        $(".links").slideDown();
+        $(".third_line").slideDown();
     }
     else{
-        $(".vh100").slideUp();
+        $(".contact").slideUp();
+        $(".links").slideUp();
+        $(".third_line").slideUp();
     }
 }

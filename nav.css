@@ -16,6 +16,15 @@
 }
 .top_line{
     position: relative;
+    /* padding: 15px 0; */
+}
+.first_line_bg{box-shadow: 2px 2px 5px #eee;}
+.first_line{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 0;
 }
 .menu_bar{
@@ -24,33 +33,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--color4); */
+    background-color: var(--color4);
     border-radius: 12px;
-    /* position: absolute; */
-    top: 20px;
-    right: 0;
+    position: absolute;
+    top: 10px;
+    left: 0;
     z-index: 999;
 }
-.logo{padding: 10px 0;}
-.logo a {
-    font: 400 26px 'Prototype', sans-serif;
-    color: var(--color1);
+.first_line .elaqe{display: none;}
+.elaqe i{margin-right: 10px;}
+.elaqe p{
+    font: 600 18px "Poppins", sans-serif;
+    margin-bottom: 15px;
+}
+.elaqe a{
+    font: 500 16px "Poppins", sans-serif;
     line-height: 100%;
     letter-spacing: 0%;
-}
-.first_line_bg{
-    box-shadow: 2px 2px 5px #eee;
-}
-.first_line{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
+    vertical-align: middle;
+    color: var(--color2);
 }
 .search_login{
     display: flex;
     align-items: center;
+    justify-content: end;
     gap: 20px;
+    width: 100%;
 }
 .login_btn{
     font: 500 16px "Poppins", sans-serif;
@@ -59,13 +67,10 @@
     border: none;
     padding: 0;
     width: 36px;
-    height: 24px;
+    /* height: 24px; */
     cursor: pointer;
 }
-.search_inp{
-    position: relative;
-    width: 222px;
-}
+.search_inp{position: relative;}
 .search_inp i{
     position: absolute;
     top: 50%;
@@ -75,7 +80,7 @@
 }
 .search_inp input{
     display: none;
-    width: 100%;
+    width: 222px;
     height: 40px;
     padding: 0 10px;
     border: 1px solid var(--color9);
@@ -87,11 +92,38 @@
     font: 400 12px "Poppins", sans-serif;
     color: var(--color10);
 }
+
 .second_line{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 15px 0;
+}
+.logo{padding: 10px 0;}
+.logo a {
+    font: 400 26px 'Prototype', sans-serif;
+    color: var(--color1);
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.links{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 0 5%;
+    display: none;
+}
+.links1 li, .links2 li{margin: 30px 0;}
+.links1 a, .links2 a{
+    font: 500 16px "Poppins", sans-serif;
+    color: var(--color2);
+    line-height: 100%;
+    letter-spacing: 0%;
+    white-space: nowrap;
+    display: inline-block;
+    width: fit-content;
 }
 .elan_btn{
     background-color: var(--color7);
@@ -103,10 +135,29 @@
     border-radius: 15px;
     border: none;
 }
+
 .third_line{
+    width: 100%;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    display: none;
+}
+.favorit{
+    width: 126px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.favorit i{color: var(--color2);}
+.favorit span{
+    font: 500 16px "Poppins", sans-serif;
+    color: var(--color2);
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
 }
 #lang {
     background: none;
@@ -117,6 +168,15 @@
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
+}
+
+.contact{
+    position: absolute;
+    left: 0;
+    top: 635px;
+    width: 100%;
+    padding: 0 5%;
+    display: none;
 }
 .social{
     display: flex;
@@ -138,83 +198,26 @@
     color: var(--color5);
     cursor: pointer;
 }
-.first_line .elaqe{display: none;}
-.elaqe{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.elaqe i{margin-right: 10px;}
-.elaqe p{
-    font: 600 18px "Poppins", sans-serif;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-.elaqe a{
-    font: 500 16px "Poppins", sans-serif;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: var(--color2);
-}
-.favorit{
-    width: 126px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.favorit i{color: var(--color2);}
-.favorit span{
-    font: 500 16px "Poppins", sans-serif;
-    color: var(--color2);
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
+
 nav hr{
-    width: 100%;
-    height: 1px;
-    margin: 0;
+    /* width: 100vw; */
+    /* margin: auto; */
+    height: 2px;
+    /* margin: 0; */
     border: none;
+    /* position: absolute; */
+    left: 0;
     background-color: var(--color4);
 }
-.links1 li, .links2 li{
-    margin: 30px 0;
-}
-.links1 a, .links2 a{
-    font: 500 16px "Poppins", sans-serif;
-    color: var(--color2);
-    line-height: 100%;
-    letter-spacing: 0%;
-    white-space: nowrap;
-    display: inline-block;
-    width: fit-content;
-}
-.vh100{display: none;}
 
 @media (min-width: 768px) {
-    .container {width: 1220px;}
+    .container {max-width: 1220px;}
     .menu_bar{display: none;}
-    .links1 a, .links2 a{
-        font: 400 16px "Poppins", sans-serif;
-    }
-    .favorit span{
-        display: none;
-    }
-    .vh100{
-        display: initial;
-    }
-    .links2{display: none;}
-    .links1{
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
-    .social{display: none;}
-    .cont_social .elaqe{
-        display: none;
+    .first_line{
+        padding: 10px 0;
+        max-width: 1220px;
+        margin: auto;
+        position: relative;
     }
     .first_line .elaqe{
         display: flex;
@@ -222,28 +225,27 @@ nav hr{
         align-items: center;
         i{display: none;}
     }
-    .search_inp input{
-        display: initial;
+
+    .links1{
+        display: flex;
+        align-items: center;
+        gap: 30px;
     }
-    .first_line{
-        justify-content: end;
-    }
-    .search_login{
-        flex-direction: row-reverse;
-    }
+    .links2{display: none;}
+    .links1 a, .links2 a{font: 400 16px "Poppins", sans-serif;}
+
     .third_line{
         position: absolute;
         top: 15px;
         right: 300px;
     }
     .favorit span{display: none;}
+    .search_inp input{display: initial;}
+    .search_login{flex-direction: row-reverse;}
     .favorit{width: fit-content; height: 40px;}
     #lang{padding: 0 10px;}
-    .first_line{
-        padding: 10px 0;
-        width: 1220px;
-        margin: auto;
-        position: relative;
-    }
+
+    .contact .elaqe{display: none;}
+    .social{display: none;}
 
 }
