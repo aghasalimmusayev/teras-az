@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="menuBar.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,73 +21,95 @@
 
     <nav>
         <div class="nav_content">
-            <div class="container">
-                <div class="top_line">
-                    <div class="menu_bar">
-                        <input id="checkbox" type="checkbox">
-                        <label class="toggle" for="checkbox">
-                            <div id="bar1" class="bars"></div>
-                            <div id="bar2" class="bars"></div>
-                            <div id="bar3" class="bars"></div>
-                        </label>
-                    </div>
+            <div class="top_line">
+                <div class="first_line_bg">
                     <div class="first_line">
+                        <div class="menu_bar">
+                            <input id="checkbox" type="checkbox">
+                            <label class="toggle" for="checkbox">
+                                <div id="bar1" class="bars"></div>
+                                <div id="bar2" class="bars"></div>
+                                <div id="bar3" class="bars"></div>
+                            </label>
+                        </div>
+                        <div class="elaqe">
+                            <p>Əlaqə: </p>
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:(012)5467876">(012) 546 78 76</a>
+                            </div>
+                        </div>
+                        <div class="search_login">
+                            <div class="search_inp">
+                                <input type="text" placeholder="Kodla və ya sözlə axtarış">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <button class="login_btn">Giriş</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="second_line">
                         <div class="logo">
                             <a href="">Teras.az</a>
                         </div>
-                        <div class="search_inp">
-                            <input type="text">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="elan_div">
+                            <button class="elan_btn">Elan yerləşdir</button>
                         </div>
-                        <button class="login_btn">Giriş</button>
-                        <div class="lang_select">
-                            <select name="" id="lang">
-                                <option value="AZ">AZ</option>
-                                <option value="RU">RU</option>
-                            </select>
+                    </div>
+                    <div class="vh100">
+                        <div class="third_line">
+                            <div class="favorit">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>Seçilmişlər</span>
+                            </div>
+                            <div class="lang_select">
+                                <select name="" id="lang">
+                                    <option value="AZ">AZ</option>
+                                    <option value="RU">RU</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="favorit">
-                            <i class="fa-regular fa-heart"></i>
-                            <span>Seçilmişlər</span>
+                        <div class="links">
+                            <ul class="links1">
+                                <li><a href="">Alqı-satqı</a></li>
+                                <li><a href="">Kirayə</a></li>
+                                <li><a href="">Biznes mərkəzləri</a></li>
+                                <li><a href="">Agentliklər</a></li>
+                                <li><a href="">Yaşayış kompleksləri</a></li>
+                            </ul>
+                            <ul class="links2">
+                                <li><a href="">Qaydalar</a></li>
+                                <li><a href="">İstifadəçi şərtləri</a></li>
+                                <li><a href="">Tez -tez verilən suallar</a></li>
+                                <li><a href="">Haqqımızda</a></li>
+                            </ul>
+                        </div>
+                        <div class="cont_social">
+                            <div class="elaqe">
+                                <p>Əlaqə: </p>
+                                <div>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="tel:(012)5467876">(012) 546 78 76</a>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <div class="social_icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="social_icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="social_icon">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="container">
-                <div class="second_line">
-                    <ul class="links1">
-                        <li><a href="">Alqı-satqı</a></li>
-                        <li><a href="">Kirayə</a></li>
-                        <li><a href="">Biznes mərkəzləri</a></li>
-                        <li><a href="">Agentliklər</a></li>
-                        <li><a href="">Yaşayış kompleksləri</a></li>
-                    </ul>
-                    <ul class="links2">
-                        <li><a href="">Qaydalar</a></li>
-                        <li><a href="">İstifadəçi şərtləri</a></li>
-                        <li><a href="">Tez -tez verilən suallar</a></li>
-                        <li><a href="">Haqqımızda</a></li>
-                    </ul>
-                </div>
-                <div class="elaqe">
-                    <p>Əlaqə: </p>
-                    <div>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:(012)5467876">(012) 546 78 76</a>
-                    </div>
-                </div>
-                <div class="social">
-                    <div class="social_icon">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-                    <div class="social_icon">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="social_icon">
-                        <i class="fa-brands fa-youtube"></i>
-                    </div>
-                </div>
             </div>
         </div>
         </div>
@@ -95,6 +118,9 @@
     <main></main>
     <footer></footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
