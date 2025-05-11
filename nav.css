@@ -14,7 +14,7 @@
     width: 90%;
     margin: auto;
 }
-.top_line{position: relative; height: 100vh;}
+.top_line{position: relative;}
 .first_line_bg{box-shadow: 2px 2px 5px #eee;}
 .first_line{
     width: 100%;
@@ -51,6 +51,7 @@
     color: var(--color2);
 }
 .fav_lang{
+    background-color: var(--color5);
     display: flex;
     padding: 10px 5%;
     flex-direction: row-reverse;
@@ -124,6 +125,7 @@
     letter-spacing: 0%;
 }
 .links{
+    background-color: var(--color5);
     position: absolute;
     width: 100%;
     top: 100px;
@@ -182,6 +184,7 @@
 }
 
 .contact{
+    background-color: var(--color5);
     position: absolute;
     left: -100%;
     top: 540px;

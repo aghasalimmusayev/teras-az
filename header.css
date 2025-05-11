@@ -1,0 +1,157 @@
+:root{
+    --bg_color: #00AF91;
+    --bg-color2: #eee;
+    --bg-color3: #fff;
+    --txt-color: #fff;
+    --txt-color2: #14142B;
+    --txt-color3: #007965;
+    --border-color: #D9DBE9;
+}
+.header_content{background-color: var(--bg-color2);}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.header_content{
+    padding: 20px 0;
+}
+.searching_box{
+
+}
+.search_btns{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.alqi_btn{
+    width: 82;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font: 600 16px "Gilroy", sans-serif;
+    line-height: 40px;
+    padding: 0 26px;
+    background-color: var(--bg_color);
+    color: var(--txt-color);
+    cursor: pointer;
+}
+.kiraye_btn{
+    width: 82;
+    height: 40;
+    border-radius: 15px;
+    border-width: 1px;
+    font: 600 16px "Gilroy", sans-serif;
+    line-height: 40px;
+    padding: 0 18px;
+    border: 1px solid var(--txt-color2);
+    cursor: pointer;
+}
+.secimler, .etrafli_axtar_conetnt{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.etrafli_axtar_conetnt{margin-top: 12px;}
+.secimler select, .etrafli_axtar_conetnt select{
+    font: 400 14px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    background-color: var(--bg-color3);
+    border: 0.7px solid var(--border-color);
+    border-radius: 15px;
+    width: 100%;
+    height: 48px;
+    padding: 0 20px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.menzil, .otaq, .qiymet, .seher, .sahe, .mertebe{position: relative;}
+.menzil::after,
+.otaq::after,
+.qiymet::after,
+.seher::after,
+.sahe::after,
+.mertebe::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    transform: translateY(-50%) rotate(90deg);
+    width: 14px;
+    height: 14px;
+    background-image: url("./Source/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+.elave_ozelliyi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-top: 14px;
+}
+.cixaris_inp, .ipoteka_inp{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+#cixaris, #ipoteka{
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--txt-color2);
+    opacity: 0.7;
+    cursor: pointer;
+}
+.cixaris_inp label, .ipoteka_inp label{
+    font: 500 14px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    cursor: pointer;
+}
+.last_btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.etarfli_btn{
+    font: 500 16px "Poppins", sans-serif;
+    color: var(--txt-color3);
+    border: none;
+    cursor: pointer;
+    line-height: 40px;
+    padding: 0 18px;
+}
+.sifirla{
+    width: 162px;
+    border-radius: 15px;
+    border-width: 1px;
+    font: 600 16px "Gilroy", sans-serif;
+    line-height: 40px;
+    padding: 0 30px;
+    border: 1px solid var(--txt-color2);
+    cursor: pointer;
+}
+.axtar{
+    width: 162px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font: 600 16px "Gilroy", sans-serif;
+    line-height: 40px;
+    padding: 0 30px;
+    background-color: var(--bg_color);
+    color: var(--txt-color);
+    cursor: pointer;
+
+}
+
+
+@media (min-width:768px) {
+    .container{max-width: 1220px;}
+    .menzil,
+    .otaq,
+    .qiymet,
+    .seher,
+    .sahe,
+    .mertebe {width: 190px;}
+    .secimler select{width: 100%;}
+}
