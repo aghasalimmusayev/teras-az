@@ -16,14 +16,14 @@
 }
 .top_line{
     position: relative;
-    /* padding: 15px 0; */
 }
 .first_line_bg{box-shadow: 2px 2px 5px #eee;}
 .first_line{
     position: relative;
     width: 100%;
+    min-height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     padding: 15px 0;
 }
@@ -33,12 +33,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color4);
+    /* background-color: var(--color4); */
     border-radius: 12px;
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 0;
     z-index: 999;
+    transition: .5s;
 }
 .first_line .elaqe{display: none;}
 .elaqe i{margin-right: 10px;}
@@ -52,6 +53,18 @@
     letter-spacing: 0%;
     vertical-align: middle;
     color: var(--color2);
+}
+.fav_lang{
+    background-color: red;
+    display: none;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    left: 0;
+    top: 150px;
 }
 .search_login{
     display: flex;
@@ -108,9 +121,10 @@
     letter-spacing: 0%;
 }
 .links{
+    background-color: red;
     position: absolute;
     width: 100%;
-    top: 100%;
+    top: 170px;
     left: 0;
     padding: 0 5%;
     display: none;
@@ -136,7 +150,10 @@
     border: none;
 }
 
+
+/**! */
 .third_line{
+    display: none;
     width: 100%;
     padding: 15px 0;
     display: flex;
@@ -171,9 +188,10 @@
 }
 
 .contact{
+    background-color: red;
     position: absolute;
     left: 0;
-    top: 635px;
+    top: 600px;
     width: 100%;
     padding: 0 5%;
     display: none;
@@ -210,42 +228,55 @@ nav hr{
     background-color: var(--color4);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 860px) {
     .container {max-width: 1220px;}
     .menu_bar{display: none;}
     .first_line{
+        justify-content: space-between;
         padding: 10px 0;
-        max-width: 1220px;
-        margin: auto;
         position: relative;
     }
     .first_line .elaqe{
         display: flex;
         flex-direction: row;
         align-items: center;
+        white-space: nowrap;
         i{display: none;}
+        p{margin: 0;}
     }
+    .fav_lang{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .favorit span{display: none;}
+    .favorit{width: fit-content; height: 40px;}
+    #lang{padding: 0 10px;}
 
+    .search_inp input{display: initial;}
+    .search_login{flex-direction: row-reverse; width: fit-content;}
+
+    .links{
+        display: initial;
+        position: static;
+        padding: 0;
+        width: fit-content;
+    }
+    .links1 li{margin: 0;}
     .links1{
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 5px;
     }
     .links2{display: none;}
     .links1 a, .links2 a{font: 400 16px "Poppins", sans-serif;}
 
-    .third_line{
-        position: absolute;
-        top: 15px;
-        right: 300px;
-    }
-    .favorit span{display: none;}
-    .search_inp input{display: initial;}
-    .search_login{flex-direction: row-reverse;}
-    .favorit{width: fit-content; height: 40px;}
-    #lang{padding: 0 10px;}
+    .third_line{display: none;}
 
     .contact .elaqe{display: none;}
     .social{display: none;}
 
 }
+@media (min-width: 890px) {.links1{gap: 10px;}}
+@media (min-width: 991px) {.links1{gap: 20px;}}
+@media (min-width: 1024px) {.links1{gap: 30px;}}
