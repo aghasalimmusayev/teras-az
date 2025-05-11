@@ -14,12 +14,9 @@
     width: 90%;
     margin: auto;
 }
-.top_line{
-    position: relative;
-}
+.top_line{position: relative; height: 100vh;}
 .first_line_bg{box-shadow: 2px 2px 5px #eee;}
 .first_line{
-    position: relative;
     width: 100%;
     min-height: 60px;
     display: flex;
@@ -33,11 +30,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--color4); */
     border-radius: 12px;
     position: absolute;
     top: 15px;
-    left: 0;
+    left: 5%;
     z-index: 999;
     transition: .5s;
 }
@@ -55,16 +51,19 @@
     color: var(--color2);
 }
 .fav_lang{
-    background-color: red;
-    display: none;
-    width: 100%;
+    display: flex;
+    padding: 10px 5%;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     position: absolute;
-    left: 0;
-    top: 150px;
+    width: 100%;
+    left: -100%;
+    right: 0;
+    top: 60px;
+    z-index: 20;
+    transition: .3s;
 }
 .search_login{
     display: flex;
@@ -80,7 +79,6 @@
     border: none;
     padding: 0;
     width: 36px;
-    /* height: 24px; */
     cursor: pointer;
 }
 .search_inp{position: relative;}
@@ -113,7 +111,12 @@
     justify-content: space-between;
     margin: 15px 0;
 }
-.logo{padding: 10px 0;}
+.logo{
+    padding: 10px 0;
+    left: 5%;
+    top: 5px;
+    transition: .3s;
+}
 .logo a {
     font: 400 26px 'Prototype', sans-serif;
     color: var(--color1);
@@ -121,13 +124,13 @@
     letter-spacing: 0%;
 }
 .links{
-    background-color: red;
     position: absolute;
     width: 100%;
-    top: 170px;
-    left: 0;
+    top: 100px;
+    left: -100%;
     padding: 0 5%;
-    display: none;
+    z-index: 10;
+    transition: .3s;
 }
 .links1 li, .links2 li{margin: 30px 0;}
 .links1 a, .links2 a{
@@ -143,24 +146,15 @@
     background-color: var(--color7);
     color: var(--color5);
     font: 600 16px "Gilroy", sans-serif;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 42px;
     border-radius: 15px;
     border: none;
 }
 
-
-/**! */
-.third_line{
-    display: none;
-    width: 100%;
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    display: none;
-}
 .favorit{
     width: 126px;
     height: 24px;
@@ -188,13 +182,12 @@
 }
 
 .contact{
-    background-color: red;
     position: absolute;
-    left: 0;
-    top: 600px;
+    left: -100%;
+    top: 540px;
     width: 100%;
     padding: 0 5%;
-    display: none;
+    transition: .3s;
 }
 .social{
     display: flex;
@@ -248,6 +241,9 @@ nav hr{
         display: flex;
         align-items: center;
         gap: 20px;
+        width: fit-content;
+        justify-content: center;
+        position: static;
     }
     .favorit span{display: none;}
     .favorit{width: fit-content; height: 40px;}
