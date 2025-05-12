@@ -7,12 +7,16 @@
     --txt-color3: #007965;
     --border-color: #D9DBE9;
 }
-.header_content{background-color: var(--bg-color2);}
 .container{
     width: 90%;
     margin: auto;
 }
-.searching_box{padding: 20px 0; display: none;}
+.searching_box_bg{background-color: var(--bg-color2);}
+.searching_box{
+    width: 100%;
+    padding: 20px; 
+    display: none;
+}
 .search_btns{
     display: flex;
     align-items: center;
@@ -40,6 +44,8 @@
     border: 1px solid var(--txt-color2);
     cursor: pointer;
 }
+.secimler .axtar, .secimler .etarfli_btn{display: none;}
+.mobile_last_btns {display: initial;}
 .secimler, .etrafli_axtar_conetnt{
     margin-top: 20px;
     display: flex;
@@ -128,6 +134,7 @@
     margin-top: 30px;
 }
 .etarfli_btn{
+    background: none;
     font: 500 16px "Poppins", sans-serif;
     color: var(--txt-color3);
     border: none;
@@ -155,7 +162,6 @@
     background-color: var(--bg_color);
     color: var(--txt-color);
     cursor: pointer;
-
 }
 .sifirla{display: none;}
 .etrafli_axtar_conetnt{display: none;}
@@ -163,15 +169,40 @@
 
 @media (min-width:768px) {
     .container{max-width: 1220px;}
-    .menzil,
-    .otaq,
-    .qiymet,
-    .seher,
-    .sahe,
-    .mertebe,
-    .unvan {width: 190px;}
-    .secimler select, .unvan input{width: 100%;}
-    .searching_box{display: initial;}
+    .searching_box_bg{background-color: transparent;}
+    .searching_box{
+        position: relative;
+        display: block;
+        padding: 38px;
+        background-color: var(--bg-color2);
+        width: 100%;
+        border: none;
+        border-radius: 26px;
+    }
+    .secimler {
+        width: 100%;
+        padding: 15px 0;
+        background-color: var(--bg-color3);
+        border-radius: 17px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+    }
+    .menzil,.otaq,.qiymet,.seher,.sahe,.mertebe,.unvan {
+        width:fit-content;
+        padding: 0 50px 0 27px;
+        border-right: 1px solid var(--border-color);
+    }
+    .secimler select{
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+    .menzil::after,.otaq::after,.qiymet::after,.seher::after,.sahe::after,.mertebe::after {right: 45px;}
+    .secimler select:focus, .etrafli_axtar_conetnt select:focus{outline: none;}
+    .secimler .axtar, .secimler .etarfli_btn{display: initial;}
+    .mobile_last_btns{display: none;}
+    .last_btns{margin: 0;}
     
-
 }
