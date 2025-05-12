@@ -28,3 +28,8 @@ menu.onclick = function(){
         menu.style.backgroundColor = "transparent"
     }
 }
+
+function searchBoxOpen(){
+    // document.querySelector(".searching_box").style.display = "initial"
+    $(".searching_box").slideDown();
+}

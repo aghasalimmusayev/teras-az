@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Source/home-icon.webp" type="image/png" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="menuBar.css">
@@ -55,7 +56,7 @@
                                 <div class="search_login">
                                     <div class="search_inp">
                                         <input type="text" placeholder="Kodla və ya sözlə axtarış">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <i class="fa-solid fa-magnifying-glass" onclick="searchBoxOpen()"></i>
                                     </div>
                                     <button class="login_btn">Giriş</button>
                                 </div>
@@ -134,7 +135,7 @@
                                 <option value="Otaq sayı">Otaq sayı</option>
                             </select>
                         </div>
-                        <div class="qiymet">                            
+                        <div class="qiymet">
                             <select name="" id="qiymet">
                                 <option value="Qiymət">Qiymət</option>
                             </select>
@@ -155,6 +156,9 @@
                             <select name="" id="mertebe">
                                 <option value="Mərtəbə">Mərtəbə</option>
                             </select>
+                        </div>
+                        <div class="unvan">
+                            <input type="text" placeholder="Rayon, Metro, Nişangah">
                         </div>
                         <div class="elave_ozelliyi">
                             <div class="cixaris_inp">
@@ -181,7 +185,8 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="nav.js"></script>
+    <script src="header.js"></script>
 </body>
 
 </html>
