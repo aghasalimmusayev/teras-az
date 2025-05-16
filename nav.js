@@ -31,5 +31,5 @@ menu.onclick = function(){
 
 function searchBoxOpen(){
     // document.querySelector(".searching_box").style.display = "initial"
-    $(".searching_box").slideDown();
+    $(".searching_box").slideToggle();
 }

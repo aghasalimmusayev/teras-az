@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Source/home-icon.webp" type="image/png" />
+    <link rel="icon" href="./Source/home-icon.webp" type="image/svg+xml" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="customSelect.css">
     <link rel="stylesheet" href="menuBar.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="header.css">
@@ -17,6 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <title>Teras.az</title>
+    <!-- https://www.figma.com/design/iPB0rmx4eKMcZjiCmUZHd2/Teras.az?node-id=0-1&p=f&t=CFbzqi0puwgaHkoN-0 -->
 </head>
 
 <body>
@@ -126,40 +128,76 @@
                             <button class="kiraye_btn">Kirayə</button>
                         </div>
                         <div class="secimler">
-                            <div class="menzil">
-                                <select name="" id="menzil">
-                                    <option value="Mənzil">Mənzil</option>
-                                </select>
+                            <div class="select_menu menzil">
+                                <div class="select">
+                                    <span class="select_head">Menzil</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="option_list">
+                                    <div class="option">menzil</div>
+                                    <div class="option">otag</div>
+                                    <div class="option">qiymet</div>
+                                </div>
                             </div>
-                            <div class="otaq">
-                                <select name="" id="otaq">
-                                    <option value="Otaq sayı">Otaq sayı</option>
-                                </select>
+                            <div class="select_menu otag">
+                                <div class="select">
+                                    <span class="select_head">Otaq sayi</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="option_list">
+                                    <div class="option">menzil</div>
+                                    <div class="option">otag</div>
+                                    <div class="option">qiymet</div>
+                                </div>
                             </div>
-                            <div class="qiymet">
-                                <select name="" id="qiymet">
-                                    <option value="Qiymət">Qiymət</option>
-                                </select>
+                            <div class="select_menu qiymet">
+                                <div class="select">
+                                    <span class="select_head">Qiymet</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="option_list">
+                                    <div class="option">menzil</div>
+                                    <div class="option">otag</div>
+                                    <div class="option">qiymet</div>
+                                </div>
                             </div>
-                            <div class="seher">
-                                <select name="" id="seher">
-                                    <option value="Şəhər">Şəhər</option>
-                                </select>
+                            <div class="select_menu seher">
+                                <div class="select">
+                                    <span class="select_head">Seher</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="option_list">
+                                    <div class="option">menzil</div>
+                                    <div class="option">otag</div>
+                                    <div class="option">qiymet</div>
+                                </div>
                             </div>
                             <button class="axtar">Axtar</button>
-                            <button class="etarfli_btn">Ətraflı axtarış</button>
+                            <button class="etarfli_btn" onclick="etrafliAxtar()">Ətraflı axtarış <i class="fa-solid fa-angle-down"></i></button>
                             <button class="sifirla">Sıfırla</button>
                         </div>
                         <div class="etrafli_axtar_conetnt">
-                            <div class="sahe">
-                                <select name="" id="sahe">
-                                    <option value="Sahə">Sahə</option>
-                                </select>
+                            <div class="select_menu sahe">
+                                <div class="select">
+                                    <span class="select_head">Sahe</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="option_list">
+                                    <div class="option">menzil</div>
+                                    <div class="option">otag</div>
+                                    <div class="option">qiymet</div>
+                                </div>
                             </div>
-                            <div class="mertebe">
-                                <select name="" id="mertebe">
-                                    <option value="Mərtəbə">Mərtəbə</option>
-                                </select>
+                            <div class="select_menu mertebe">
+                                <div class="select">
+                                    <span class="select_head">Mertebe</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="option_list">
+                                    <div class="option">menzil</div>
+                                    <div class="option">otag</div>
+                                    <div class="option">qiymet</div>
+                                </div>
                             </div>
                             <div class="unvan">
                                 <input type="text" placeholder="Rayon, Metro, Nişangah">
@@ -177,7 +215,7 @@
                         </div>
                         <div class="mobile_last_btns">
                             <div class="last_btns">
-                                <button class="etarfli_btn">Ətraflı axtarış</button>
+                                <button class="etarfli_btn" onclick="etrafliAxtar()">Ətraflı axtarış</button>
                                 <button class="sifirla">Sıfırla</button>
                                 <button class="axtar">Axtar</button>
                             </div>
@@ -190,6 +228,7 @@
     <main></main>
     <footer></footer>
 
+    <script src="customSelect.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="nav.js"></script>

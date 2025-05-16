@@ -52,21 +52,7 @@
     flex-direction: column;
     gap: 12px;
 }
-.etrafli_axtar_conetnt{margin-top: 12px;}
-.secimler select, .etrafli_axtar_conetnt select{
-    font: 400 14px "Poppins", sans-serif;
-    color: var(--txt-color2);
-    background-color: var(--bg-color3);
-    border: 0.7px solid var(--border-color);
-    border-radius: 15px;
-    width: 100%;
-    height: 48px;
-    padding: 0 20px;
-    outline: none;
-    appearance: none;
-    -webkit-appearance: none;
-}
-.secimler select:focus, .etrafli_axtar_conetnt select:focus{outline: 1px solid var(--bg_color);}
+.etrafli_axtar_conetnt{margin-top: 12px;display: none;}
 .unvan input{
     font: 400 16px "Poppins", sans-serif;
     color: var(--txt-color2);
@@ -84,25 +70,6 @@
     color: var(--txt-color2);
 }
 .unvan input:focus{outline: 1px solid var(--bg_color);}
-.menzil, .otaq, .qiymet, .seher, .sahe, .mertebe{position: relative;}
-.menzil::after,
-.otaq::after,
-.qiymet::after,
-.seher::after,
-.sahe::after,
-.mertebe::after {
-    content: '';
-    position: absolute;
-    top: 24px;
-    right: 20px;
-    transform: translateY(-50%) rotate(90deg);
-    width: 14px;
-    height: 14px;
-    background-image: url("./Source/arrow.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    pointer-events: none;
-}
 .elave_ozelliyi{
     display: flex;
     align-items: center;
@@ -142,6 +109,7 @@
     line-height: 40px;
     padding: 0 18px;
 }
+.etarfli_btn i{display: none;}
 .sifirla{
     width: 162px;
     border-radius: 15px;
@@ -164,7 +132,6 @@
     cursor: pointer;
 }
 .sifirla{display: none;}
-.etrafli_axtar_conetnt{display: none;}
 
 
 @media (min-width:768px) {
@@ -181,6 +148,16 @@
     }
     .secimler {
         width: 100%;
+        padding: 5px;
+        background-color: var(--bg-color3);
+        border-radius: 17px;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        align-items: center;
+        gap: 0;
+    }
+    .etrafli_axtar_conetnt{
+        width: 100%;
         padding: 15px 0;
         background-color: var(--bg-color3);
         border-radius: 17px;
@@ -189,20 +166,16 @@
         align-items: center;
         gap: 0;
     }
-    .menzil,.otaq,.qiymet,.seher,.sahe,.mertebe,.unvan {
-        width:fit-content;
-        padding: 0 50px 0 27px;
-        border-right: 1px solid var(--border-color);
-    }
-    .secimler select{
+    .etrafli_axtar_conetnt select{
         width: 100%;
+        height: fit-content;
         border: none;
         border-radius: 0;
     }
-    .menzil::after,.otaq::after,.qiymet::after,.seher::after,.sahe::after,.mertebe::after {right: 45px;}
-    .secimler select:focus, .etrafli_axtar_conetnt select:focus{outline: none;}
+    .unvan input{border-radius: 0;}
+    .elave_ozelliyi{margin: 0;}
     .secimler .axtar, .secimler .etarfli_btn{display: initial;}
+    .etarfli_btn i{display: initial;}
     .mobile_last_btns{display: none;}
     .last_btns{margin: 0;}
-    
 }
