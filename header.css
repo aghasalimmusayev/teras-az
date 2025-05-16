@@ -44,15 +44,22 @@
     border: 1px solid var(--txt-color2);
     cursor: pointer;
 }
-.secimler .axtar, .secimler .etarfli_btn{display: none;}
-.mobile_last_btns {display: initial;}
 .secimler, .etrafli_axtar_conetnt{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 100%;
 }
-.etrafli_axtar_conetnt{margin-top: 12px;display: none;}
+.secimler{position: relative;}
+.etrafli_axtar_conetnt{
+    margin-top: 12px;
+    /* max-height: 0px; */
+    /* overflow: hidden; */
+    /* opacity: 0; */
+    display: none;
+    transition: all .4s;
+}
 .unvan input{
     font: 400 16px "Poppins", sans-serif;
     color: var(--txt-color2);
@@ -81,6 +88,7 @@
     display: flex;
     align-items: center;
     gap: 14px;
+    text-align: center;
 }
 #cixaris, #ipoteka{
     width: 20px;
@@ -94,11 +102,18 @@
     color: var(--txt-color2);
     cursor: pointer;
 }
+.mobile_last_btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
 .last_btns{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
 }
 .etarfli_btn{
     background: none;
@@ -133,7 +148,6 @@
 }
 .sifirla{display: none;}
 
-
 @media (min-width:768px) {
     .container{max-width: 1220px;}
     .searching_box_bg{background-color: transparent;}
@@ -152,30 +166,55 @@
         background-color: var(--bg-color3);
         border-radius: 17px;
         flex-direction: row;
-        /* justify-content: space-between; */
         align-items: center;
         gap: 0;
     }
     .etrafli_axtar_conetnt{
         width: 100%;
-        padding: 15px 0;
+        padding: 5px 0;
         background-color: var(--bg-color3);
         border-radius: 17px;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        overflow: hidden;
         gap: 0;
     }
-    .etrafli_axtar_conetnt select{
-        width: 100%;
-        height: fit-content;
-        border: none;
-        border-radius: 0;
+    .unvan{
+        border-right: 2px solid #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.20%;
+        padding: 0 5px;
     }
-    .unvan input{border-radius: 0;}
-    .elave_ozelliyi{margin: 0;}
-    .secimler .axtar, .secimler .etarfli_btn{display: initial;}
+    .unvan input{
+        max-width: 280px;
+        margin: auto;
+    }
+    .elave_ozelliyi{
+        justify-content: center;
+        gap: 10px;
+        width: 33.32%;
+        padding: 0;
+        margin: 0;
+    }
+    .axtar, .etarfli_btn{position: static;}
     .etarfli_btn i{display: initial;}
-    .mobile_last_btns{display: none;}
-    .last_btns{margin: 0;}
+    .mobile_last_btns{
+        position: absolute;
+        top: 108px;
+        right: 38px;
+        z-index: 10;
+        margin: 0;
+        max-width: 381px;
+    }
+    .last_btns{
+        margin: 0;
+        width: fit-content;
+        margin: auto;
+        gap: 10px;
+    }
+}
+@media(min-width: 1220px){
+    .mobile_last_btns{max-width: 381px;}
 }

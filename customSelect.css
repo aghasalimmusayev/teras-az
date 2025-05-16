@@ -8,6 +8,7 @@
     padding: 0 20px;
     height: 48px;
     color: #333;
+    text-align: center;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -39,7 +40,7 @@
 .option_list.active{height: 180px;}
 @media(min-width: 768px) {
     .select_menu{
-        width: 16%;
+        width: 16.66%;
         border-right: 2px solid #eee;
     }
     .select{width: fit-content; margin: auto;}
