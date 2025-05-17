@@ -8,6 +8,7 @@
     padding: 0 20px;
     height: 48px;
     color: #333;
+    white-space: nowrap;
     text-align: center;
     border-radius: 15px;
     display: flex;
@@ -39,7 +40,7 @@
 }
 .option_list::-webkit-scrollbar-thumb{background-color: aqua ;}
 .option_list.active{height: 180px;}
-@media(min-width: 768px) {
+@media(min-width: 860px) {
     .select_menu{
         width: 16.66%;
         border-right: 2px solid #eee;
