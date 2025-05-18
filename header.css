@@ -14,7 +14,7 @@
 .searching_box_bg{background-color: var(--bg-color2);}
 .searching_box{
     width: 100%;
-    padding: 20px; 
+    padding: 20px 0;
     display: none;
 }
 .search_btns{
@@ -32,7 +32,9 @@
     background-color: var(--bg_color);
     color: var(--txt-color);
     cursor: pointer;
+    transition: .3s;
 }
+.alqi_btn:hover{color: var(--txt-color2);}
 .kiraye_btn{
     width: 82;
     height: 40;
@@ -43,7 +45,9 @@
     padding: 0 18px;
     border: 1px solid var(--txt-color2);
     cursor: pointer;
+    transition: .3s;
 }
+.kiraye_btn:hover{border-color: transparent;}
 .secimler, .etrafli_axtar_conetnt{
     margin-top: 20px;
     display: flex;
@@ -124,7 +128,9 @@
     cursor: pointer;
     line-height: 40px;
     padding: 0 15px;
+    transition: .3s;
 }
+.etarfli_btn:hover{color: var(--txt-color2);}
 .etarfli_btn i{display: none;}
 .sifirla{
     width: 162px;
@@ -134,7 +140,10 @@
     line-height: 40px;
     border: 1px solid var(--txt-color2);
     cursor: pointer;
+    transition: .3s;
 }
+.sifirla:hover{border-color: transparent;}
+.sifirla{display: none;}
 .axtar{
     width: 162px;
     border: 1px solid var(--bg_color);
@@ -145,8 +154,9 @@
     background-color: var(--bg_color);
     color: var(--txt-color);
     cursor: pointer;
+    transition: .3s;
 }
-.sifirla{display: none;}
+.axtar:hover{color: var(--txt-color2);}
 
 @media (min-width:860px) {
     .container{max-width: 1220px;}
@@ -154,7 +164,7 @@
     .searching_box{
         position: relative;
         display: block;
-        padding: 38px;
+        padding: 38px 38px 120px;
         background-color: var(--bg-color2);
         width: 100%;
         border: none;

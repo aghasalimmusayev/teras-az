@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="menuBar.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,15 +59,15 @@
                                 <div class="search_login">
                                     <div class="search_inp">
                                         <input type="text" placeholder="Kodla və ya sözlə axtarış">
-                                        <i class="fa-solid fa-magnifying-glass" onclick="searchBoxOpen()"></i>
+                                        <i class="fa-solid fa-magnifying-glass"></i>
                                     </div>
+                                    <i id="searchToggleBtn" class="fa-solid fa-magnifying-glass" onclick="searchBoxOpen()"></i>
                                     <button class="login_btn">Giriş</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="container">
                     <div class="second_line">
                         <div class="logo">
@@ -112,9 +113,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </nav>
 
@@ -130,7 +129,7 @@
                         <div class="secimler">
                             <div class="select_menu menzil">
                                 <div class="select">
-                                    <span class="select_head">Menzil</span>
+                                    <span class="select_head">Mənzil</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="option_list">
@@ -141,7 +140,7 @@
                             </div>
                             <div class="select_menu otag">
                                 <div class="select">
-                                    <span class="select_head">Otaq sayi</span>
+                                    <span class="select_head">Otaq sayı</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="option_list">
@@ -152,7 +151,7 @@
                             </div>
                             <div class="select_menu qiymet">
                                 <div class="select">
-                                    <span class="select_head">Qiymet</span>
+                                    <span class="select_head">Qiymət</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="option_list">
@@ -163,7 +162,7 @@
                             </div>
                             <div class="select_menu seher">
                                 <div class="select">
-                                    <span class="select_head">Seher</span>
+                                    <span class="select_head">Şəhər</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="option_list">
@@ -176,7 +175,7 @@
                         <div class="etrafli_axtar_conetnt">
                             <div class="select_menu sahe">
                                 <div class="select">
-                                    <span class="select_head">Sahe</span>
+                                    <span class="select_head">Sahə</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="option_list">
@@ -187,7 +186,7 @@
                             </div>
                             <div class="select_menu mertebe">
                                 <div class="select">
-                                    <span class="select_head">Mertebe</span>
+                                    <span class="select_head">Mərtəbə</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <div class="option_list">
@@ -222,7 +221,22 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <div class="container">
+            <section id="bigBtns">
+                <div class="bigBtns_content">
+                    <div class="gundelik_evler">
+                        <img src="./Source/big_button1.png" alt="">
+                        <span>Gündəlik kirayə evlər</span>
+                    </div>
+                    <div class="ipoteka_evler">
+                        <img src="./Source/big_button2.png" alt="">
+                        <span>İpotekada olan evlər</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <footer></footer>
 
     <script src="customSelect.js"></script>

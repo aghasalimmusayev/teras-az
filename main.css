@@ -1,0 +1,50 @@
+:root{
+    --bg_color: #00AF91;
+    --bg-color2: #eee;
+    --bg-color3: #fff;
+    --bg-color4: #D9DBE9;
+    --txt-color: #fff;
+    --txt-color2: #14142B;
+    --txt-color3: #007965;
+    --border-color: #D9DBE9;
+}
+
+#bigBtns{padding: 26px 0;}
+#bigBtns .bigBtns_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.gundelik_evler, .ipoteka_evler{
+    width: 220px;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px;
+    border: 1px solid var(--bg-color4);
+    border-radius: 17px;
+    background-color: var(--bg-color3);
+    cursor: pointer;
+    transition: .3s;
+    span{
+        width: 125px;
+        text-align: center;
+        font: 500 16px "Poppins", sans-serif;
+        line-height: 118%;
+    }
+    img{
+        width: 116px;
+        height: 70px;
+    }
+}
+.gundelik_evler:hover, .ipoteka_evler:hover{background-color: #f7f6f6;}
+
+@media (min-width: 768px) {
+    #bigBtns{padding: 0;}
+    #bigBtns .bigBtns_content{transform: translateY(-50%);}
+
+}

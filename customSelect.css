@@ -1,13 +1,26 @@
+:root{
+    --bg_color: #00AF91;
+    --bg-color2: #eee;
+    --bg-color3: #fff;
+    --txt-color: #fff;
+    --txt-color2: #14142B;
+    --txt-color3: #007965;
+    --border-color: #D9DBE9;
+}
+
 .select_menu{
     width: 100%;
     cursor: pointer;
     position: relative;
 }
 .select{
-    background-color: #fff;
+    background-color: var(--bg-color3);
     padding: 0 20px;
     height: 48px;
-    color: #333;
+    font: 400 14px "Poppins", sans-serif;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--txt-color2);
     white-space: nowrap;
     text-align: center;
     border-radius: 15px;
@@ -20,8 +33,12 @@
 .option_list{
     position: absolute;
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: var(--bg-color3);
     border-radius: 5px;
+    font: 400 14px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    line-height: 100%;
+    letter-spacing: 0%;
     margin-top: 10px;
     max-height: 0;
     overflow-y: auto;
@@ -32,18 +49,23 @@
     padding: 10px 15px;
     transition: 0.3s ease-in-out;
 }
-.option:hover{color: blue;}
-.option.selected{color: red;}
+.option:hover{background-color: var(--border-color);}
+.option.selected{color: var(--txt-color3);font-weight: 550;}
 .option_list::-webkit-scrollbar{
     width: 5px;
-    background-color: #ddd;
+    background-color: var(--border-color);
 }
-.option_list::-webkit-scrollbar-thumb{background-color: aqua ;}
+.option_list::-webkit-scrollbar-thumb{background-color: var(--border-color) ;}
 .option_list.active{height: 180px;}
 @media(min-width: 860px) {
     .select_menu{
         width: 16.66%;
-        border-right: 2px solid #eee;
+        border-right: 2px solid var(--bg-color2);
     }
-    .select{width: fit-content; margin: auto;}
+    .select{
+        width: fit-content; 
+        margin: auto;
+        font-size: 16px;
+    }
+    .option_list{font-size: 16px;}
 }

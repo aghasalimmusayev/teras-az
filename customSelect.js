@@ -29,7 +29,7 @@ document.querySelectorAll(".select_menu").forEach(menu => {
       options.forEach((opt) => opt.classList.remove("selected"));
       selectHead.innerHTML = option.innerHTML;
       option.classList.add("selected");
-      console.log(option.textContent);
+      // console.log(option.textContent);
 
       optionList.style.maxHeight = "0";
       selectArrow.classList.remove("rotate");
