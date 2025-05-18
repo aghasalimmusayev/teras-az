@@ -15,7 +15,7 @@
     margin: auto;
 }
 .top_line{position: relative;}
-.first_line_bg{box-shadow: 2px 2px 5px #eee;}
+.first_line_bg{box-shadow: 2px 2px 5px var(--color4);}
 .first_line{
     width: 100%;
     min-height: 60px;
@@ -67,12 +67,16 @@
     z-index: 100;
     transition: .3s;
 }
+.top_right{
+    display: flex; align-items: center; gap: 20px;
+}
 .search_login{
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 20px;
     width: 100%;
+    box-sizing: border-box;
 }
 .login_btn {
   position: relative;
@@ -92,8 +96,7 @@
   left: 0;
   width: 100%;
   transform: scale(0);
-  /* transform-origin: center; */
-  height: 2.5px;
+  height: 2px;
   background-color: var(--color8);
   transition: all 0.3s;
 }
@@ -141,7 +144,6 @@
     line-height: 100%;
     letter-spacing: 0%;
 }
-.logo:hover{transform: scale(1.05);}
 .links{
     background-color: var(--color5);
     position: absolute;
@@ -171,7 +173,7 @@
     left: 0;
     width: 100%;
     transform: scale(0);
-    height: 2.5px;
+    height: 2px;
     background-color: var(--color2);
     transition: all 0.3s;
 }
@@ -204,7 +206,7 @@
     cursor: pointer;
     transition: .3s;
 }
-.favorit i:hover{transform: scale(1.1);}
+.favorit i:hover{color: var(--color1);}
 .favorit span{
     font: 500 16px "Poppins", sans-serif;
     color: var(--color2);
@@ -222,7 +224,6 @@
     -webkit-appearance: none;
     cursor: pointer;
 }
-
 .contact{
     background-color: var(--color5);
     position: absolute;
@@ -253,7 +254,9 @@
     padding: 10px;
     color: var(--color5);
     cursor: pointer;
+    transition: .3s;
 }
+.social i:hover{color: var(--color2);}
 
 @media (min-width: 860px) {
     .container {max-width: 1220px;}
@@ -272,22 +275,21 @@
         p{margin: 0;}
     }
     .fav_lang{
+        position: static;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 20px;
         width: fit-content;
         height: fit-content;
-        justify-content: center;
-        position: static;
+        padding: 0;
     }
     .favorit span{display: none;}
     .favorit{width: fit-content; height: 40px;}
     #lang{padding: 0 10px;}
-
     #searchToggleBtn{display: none; cursor: pointer;}
     .search_inp{display: initial;}
     .search_login{flex-direction: row-reverse; width: fit-content;}
-
     .links{
         display: initial;
         position: static;
@@ -303,12 +305,8 @@
     }
     .links2{display: none;}
     .links1 a, .links2 a{font: 400 16px "Poppins", sans-serif;}
-
-    .third_line{display: none;}
-
     .contact .elaqe{display: none;}
     .social{display: none;}
-
 }
 @media (min-width: 890px) {.links1{gap: 10px;}}
 @media (min-width: 991px) {.links1{gap: 20px;}}
