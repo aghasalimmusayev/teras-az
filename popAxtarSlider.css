@@ -64,6 +64,7 @@
   color: var(--txt-color4);
 }
 
-@media (max-width:768px) {
+@media (max-width:860px) {
  .pop_axtar_slider_btns{display: none;} 
+ .popAxtarisSlider{padding: 0;}
 }
