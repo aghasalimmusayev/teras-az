@@ -42,9 +42,37 @@
     }
 }
 .gundelik_evler:hover, .ipoteka_evler:hover{background-color: #f7f6f6;}
+.section_head_line{
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section_head{
+    font: 600 30px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+.vip_all_look{margin: 0;}
+.hamisina_bax{
+    font: 600 18px "Poppins", sans-serif;
+    color: var(--txt-color3);
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
 
-@media (min-width: 768px) {
+@media (min-width: 860px) {
     #bigBtns{padding: 0;}
     #bigBtns .bigBtns_content{transform: translateY(-50%);}
-
+    .vip_all_look{margin-right: 150px;}
 }

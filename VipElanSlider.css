@@ -1,0 +1,233 @@
+:root{
+    --bg_color: #00AF91;
+    --bg-color2: #eee;
+    --bg-color3: #fff;
+    --bg-color4: #D9DBE9;
+    --bg-color5: #FFC837;
+    --txt-color: #fff;
+    --txt-color2: #14142B;
+    --txt-color3: #007965;
+    --txt-color4: #00AF91;
+    --txt-color5: #6E7191;
+    --txt-color6: #462255;
+    --border-color: #D9DBE9;
+    --border-color2: #A0A3BD;
+}
+
+#vipElanlar{
+    position: relative;
+    padding: 15px 0 50px;
+    margin-top: 80px;
+}
+.my_slider {margin-top: 30px;}
+.swiper {
+    width: 100%;
+    height: 640px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    width: 288px;
+    height: 309px;
+    margin: 0;
+    background: #fff;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #c5c3c3;
+    border-radius: 12px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 30px;
+    transform: none;
+    width: 42px;
+    height: 42px;
+    background-color: #eee;
+    color: #00AF91;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10;
+    cursor: pointer;
+}
+.swiper-button-prev::after {
+  content: '⟵'; /* sola ox */
+  font-size: 20px;
+  font-weight: bold;
+}
+.swiper-button-next::after {
+  content: '⟶'; /* sağa ox */
+  font-size: 20px;
+  font-weight: bold;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {background-color: #d1d0d0;}
+.swiper-button-prev {
+    right: 60px;
+    left: auto;
+}
+.swiper-button-next {right: 0;}
+
+.ev {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ev_img {
+    position: relative;
+    width: 100%;
+    height: 176px;
+}
+.ev_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ev_info {
+    height: 122px;
+    margin: 0;
+    padding: 14px;
+}
+.ev_qiymet{
+    font: 600 20px "Poppins", sans-serif;
+    line-height: 100%;
+    letter-spacing: 0%;
+    height: 31.75px;
+    color: var(--txt-color4);
+}
+.ev_unvan{
+    font: 400 16px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    height: 25.4px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.ev_details{
+    display: flex;
+    align-items: center;
+    height: 24.34px;
+}
+.ev_otaq_sayi, .ev_kvadrat, .ev_mertebe{
+    font: 400 13px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.ev_otaq_sayi{
+    border-right: 0.5px solid var(--border-color2);
+    padding-right: 12px;
+}
+.ev_kvadrat{
+    border-right: 0.5px solid var(--border-color2);
+    padding: 0 12px;
+}
+.ev_mertebe{padding: 0 12px;}
+.elan_date{
+    display: flex;
+    align-items: center;
+    font: 400 12px "Poppins", sans-serif;
+    color: var(--txt-color5);
+    height: 31.75px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.ferqli_ozellikler{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .ferqli_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ferqli_top_left{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .heart_icon {
+            width: 26px;
+            height: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 24px;
+                color: #ffffffe1;
+            }
+        }
+    }
+    .ferqli_bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ferqli_bottom_left{
+            span{
+                background-color: var(--bg-color3);
+                padding: 3px 14px;
+                border: none;
+                border-radius: 30px;
+                text-align: center;
+                font: 500 12px "Poppins", sans-serif;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: var(--txt-color6);
+            }
+        }
+        .ferqli_bottom_right{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .check_icon{
+                width: 26px;
+                height: 26px;
+            }
+            .percent_icon{
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                background-color: var(--bg-color5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--bg-color3);
+                font-weight: bold;
+            }
+        }
+    }
+    .king_icon, .diamond_icon{
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: var(--bg-color3);    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 18px;
+            height: 14px;
+        }
+    }
+}
+
+@media (max-width: 860px){
+    .swiper-button-next,
+    .swiper-button-prev {display: none;}
+}
