@@ -14,18 +14,80 @@
     --border-color2: #A0A3BD;
 }
 
-#vipElanlar{
+#vipElanlar, #premiumElanlar, #sonElanlar, #yasayisKompleksleri{
     position: relative;
     padding: 15px 0 50px;
     margin-top: 80px;
 }
+.section_head_line{
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section_head{
+    font: 600 30px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+.hamisina_bax{margin-right: 150px;}
+.hamisina_bax{
+    font: 600 18px "Poppins", sans-serif;
+    color: var(--txt-color3);
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.kv_ev_qiymet{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+.yas_komp_ev_qiymet{
+    font: 600 18px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.yas_komp_ev_kv{
+    font: 400 16px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.yas_komp_ev_filter{
+    border: none;
+    border-radius: 36px;
+    background-color: var(--bg_color);
+    color: var(--bg-color3);
+    text-align: center;
+    width: 128px;
+    height: 40px;
+    font: 400 16px "Poppins", sans-serif;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
 .my_slider {margin-top: 30px;}
 .swiper {
     width: 100%;
     height: 640px;
     box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 .swiper-slide {
     width: 288px;
@@ -40,7 +102,6 @@
     border: 1px solid #c5c3c3;
     border-radius: 12px;
 }
-
 .swiper-button-next,
 .swiper-button-prev {
     top: 30px;
@@ -57,6 +118,8 @@
     z-index: 10;
     cursor: pointer;
 }
+#yasayisKompleksleri .swiper-button-next,
+#yasayisKompleksleri .swiper-button-prev{top: 35px;}
 .swiper-button-prev::after {
   content: '⟵'; /* sola ox */
   font-size: 20px;
@@ -230,4 +293,6 @@
 @media (max-width: 860px){
     .swiper-button-next,
     .swiper-button-prev {display: none;}
+    .hamisina_bax{margin: 0;}
+    .kv_ev_qiymet{display: none;}
 }
