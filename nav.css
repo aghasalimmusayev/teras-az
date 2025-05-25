@@ -261,6 +261,12 @@
 @media (min-width: 860px) {
     .container {max-width: 1220px;}
     .menu_bar{display: none;}
+    .logo a{font-size: 40px;}
+    .elan_btn{
+        font-size: 20px;
+        width: 200px;
+        height: 48px;
+    }
     .first_line{
         justify-content: space-between;
         padding: 0;

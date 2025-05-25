@@ -1,4 +1,7 @@
-desktop-da header-de axtaris varsa, navdaki search inputu ne ucundu?
 navdaki linkler mobile-de coxdu, amma desktop-da az
+
 3-cur etrafli axtaris var, 3-u debir birinden ferqli
+
 Navbar fixed olsun?
+
+sekillerin pixeli coxdu

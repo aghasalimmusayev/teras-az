@@ -1,0 +1,106 @@
+:root {
+  --bg_color: #00af91;
+  --bg-color2: #eee;
+  --bg-color3: #fff;
+  --bg-color4: #d9dbe9;
+  --bg-color5: #ffc837;
+  --txt-color: #fff;
+  --txt-color2: #14142b;
+  --txt-color3: #007965;
+  --txt-color4: #00af91;
+  --txt-color5: #6e7191;
+  --txt-color6: #462255;
+  --border-color: #d9dbe9;
+  --border-color2: #a0a3bd;
+}
+#agentlikler{
+    margin-top: 40px;
+    position: relative;
+}
+#agentlikler .swiper{height: 128px;}
+#agentlikler .swiper-slide{
+    width: 266px !important;
+    height: 128px !important;
+}
+.agentlik{
+    width: 266px;
+    height: 128px;
+    border: 0.5px solid var(--border-color2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+.agentlik_img{
+    width: 132px;
+    height: 128px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.agentlik_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 134px;
+    height: 100%;
+    .agentlik_name{
+        font: 500 14px "Poppins",  sans-serif;
+        color: var(--txt-color2);
+        min-height: 18px;
+        height: auto;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .a_teklif{
+        font: 600 14px "Poppins",  sans-serif;
+        color: var(--txt-color);
+        width: 98px;
+        height: 30px;
+        background-color: var(--bg_color);
+        text-align: center;
+        border: none;
+        border-radius: 17px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(min-width: 860px) {
+    #agentlikler{margin-top: 90px;}
+    #agentlikler .swiper{height: 382px;}
+    #agentlikler .swiper-slide{
+        width: 392px !important;
+        height: 180px !important;
+    }
+    #agentlikler .swiper-button-next,
+    #agentlikler .swiper-button-prev {top: 15px;}
+
+    .agentlik{
+        width: 392px;
+        height: 180px;
+    }
+    .agentlik_img{
+        width: 184px;
+        height: 180px;
+    }
+    .agentlik_info{
+        gap: 22px;
+        width: 208px;
+        .agentlik_name{font-size: 18px;}
+        .a_teklif{
+            font-size: 18px;
+            width: 154px;
+            height: 34px;
+            border-radius: 17px;
+        }
+    }    
+}

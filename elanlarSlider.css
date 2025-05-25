@@ -1,298 +1,338 @@
-:root{
-    --bg_color: #00AF91;
-    --bg-color2: #eee;
-    --bg-color3: #fff;
-    --bg-color4: #D9DBE9;
-    --bg-color5: #FFC837;
-    --txt-color: #fff;
-    --txt-color2: #14142B;
-    --txt-color3: #007965;
-    --txt-color4: #00AF91;
-    --txt-color5: #6E7191;
-    --txt-color6: #462255;
-    --border-color: #D9DBE9;
-    --border-color2: #A0A3BD;
+:root {
+  --bg_color: #00af91;
+  --bg-color2: #eee;
+  --bg-color3: #fff;
+  --bg-color4: #d9dbe9;
+  --bg-color5: #ffc837;
+  --txt-color: #fff;
+  --txt-color2: #14142b;
+  --txt-color3: #007965;
+  --txt-color4: #00af91;
+  --txt-color5: #6e7191;
+  --txt-color6: #462255;
+  --border-color: #d9dbe9;
+  --border-color2: #a0a3bd;
 }
 
-#vipElanlar, #premiumElanlar, #sonElanlar, #yasayisKompleksleri{
-    position: relative;
-    padding: 15px 0 50px;
-    margin-top: 80px;
+#vipElanlar,
+#premiumElanlar,
+#sonElanlar {
+  position: relative;
+  /* padding: 15px 0 0; */
+  margin-top: 30px;
 }
-.section_head_line{
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.section_head_line {
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.section_head{
-    font: 600 30px "Poppins", sans-serif;
-    color: var(--txt-color2);
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
+.section_head {
+  font: 600 18px "Poppins", sans-serif;
+  color: var(--txt-color2);
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
 }
-.hamisina_bax{margin-right: 150px;}
-.hamisina_bax{
-    font: 600 18px "Poppins", sans-serif;
-    color: var(--txt-color3);
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+.hamisina_bax {
+  margin: 0;
+  font: 600 12px "Poppins", sans-serif;
+  color: var(--txt-color3);
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
-.kv_ev_qiymet{
-    display: flex;
-    align-items: center;
-    gap: 34px;
-}
-.yas_komp_ev_qiymet{
-    font: 600 18px "Poppins", sans-serif;
-    color: var(--txt-color2);
-    text-align: center;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-.yas_komp_ev_kv{
-    font: 400 16px "Poppins", sans-serif;
-    color: var(--txt-color2);
-    text-align: center;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-.yas_komp_ev_filter{
-    border: none;
-    border-radius: 36px;
-    background-color: var(--bg_color);
-    color: var(--bg-color3);
-    text-align: center;
-    width: 128px;
-    height: 40px;
-    font: 400 16px "Poppins", sans-serif;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-
 .my_slider {margin-top: 30px;}
 .swiper {
-    width: 100%;
-    height: 640px;
-    box-sizing: border-box;
-    margin: 0 auto;
+  width: 100%;
+  height: 219px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 .swiper-slide {
-    width: 288px;
-    height: 309px;
-    margin: 0;
-    background: #fff;
-    height: 640px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 1px solid #c5c3c3;
-    border-radius: 12px;
+  width: 155px !important;
+  height: 219px !important;
+  margin: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #c5c3c3;
+  border-radius: 12px;
 }
 .swiper-button-next,
 .swiper-button-prev {
-    top: 30px;
+  display: none;
+}
+.ev {
+  width: 155px;
+  height: 219px;
+  display: flex;
+  flex-direction: column;
+}
+.ev_img {
+  position: relative;
+  width: 100%;
+  height: 121px;
+}
+.ev_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ev_info {
+  height: 98px;
+  margin: 0;
+  padding: 14px;
+}
+.ev_qiymet {
+  font: 600 16px "Poppins", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0%;
+  height: 20px;
+  color: var(--txt-color4);
+}
+.ev_unvan {
+  font: 400 12px "Poppins", sans-serif;
+  color: var(--txt-color2);
+  height: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.ev_details {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.ev_otaq_sayi,
+.ev_kvadrat,
+.ev_mertebe {
+  font: 400 11px "Poppins", sans-serif;
+  color: var(--txt-color2);
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.ev_otaq_sayi {
+  border-right: 0.5px solid var(--border-color2);
+  padding-right: 5px;
+}
+.ev_kvadrat {
+  border-right: 0.5px solid var(--border-color2);
+  padding: 0 5px;
+}
+.ev_mertebe {
+  padding-left: 5px;
+}
+.elan_date {
+  display: flex;
+  align-items: center;
+  font: 400 10px "Poppins", sans-serif;
+  color: var(--txt-color5);
+  height: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.ferqli_ozellikler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box !important;
+}
+.ferqli_ozellikler .ferqli_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ferqli_ozellikler .ferqli_top .ferqli_top_left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ferqli_ozellikler .ferqli_top .heart_icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ferqli_ozellikler .ferqli_top .heart_icon i {
+  font-size: 20px;
+  color: #ffffffe1;
+}
+.ferqli_ozellikler .ferqli_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ferqli_ozellikler .ferqli_bottom .ferqli_bottom_left span {
+  background-color: var(--bg-color3);
+  padding: 3px 14px;
+  height: 22px;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  font: 400 10px "Poppins", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: var(--txt-color6);
+}
+.ferqli_ozellikler .ferqli_bottom .ferqli_bottom_right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ferqli_ozellikler .ferqli_bottom .ferqli_bottom_right .check_icon {
+  width: 18px;
+  height: 18px;
+}
+.ferqli_ozellikler .ferqli_bottom .ferqli_bottom_right .percent_icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--bg-color5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bg-color3);
+  font-weight: bold;
+  font-size: 12px;
+}
+.ferqli_ozellikler .king_icon,
+.ferqli_ozellikler .diamond_icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--bg-color3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ferqli_ozellikler .king_icon img,
+.ferqli_ozellikler .diamond_icon img {
+  width: 18px;
+  height: 14px;
+}
+@media (min-width: 480px) {
+  .swiper-slide {
+    width: 166px !important;
+    height: 219px !important;
+  }
+  .ev {
+    width: 166px;
+    height: 219px;
+  }
+}
+@media (min-width: 860px) {
+  #vipElanlar,
+  #premiumElanlar,
+  #sonElanlar{margin-top: 80px;}
+  .section_head {font-size: 30px;}
+  .hamisina_bax {
+    margin-right: 150px;
+    font-size: 18px;
+  }
+  .swiper {height: 640px;}
+  .swiper-slide {
+    width: 288px !important;
+    height: 309px !important;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+    top: 15px;
     transform: none;
     width: 42px;
     height: 42px;
     background-color: #eee;
-    color: #00AF91;
+    color: #00af91;
     border-radius: 50%;
-    display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
     z-index: 10;
     cursor: pointer;
-}
-#yasayisKompleksleri .swiper-button-next,
-#yasayisKompleksleri .swiper-button-prev{top: 35px;}
-.swiper-button-prev::after {
-  content: '⟵'; /* sola ox */
-  font-size: 20px;
-  font-weight: bold;
-}
-.swiper-button-next::after {
-  content: '⟶'; /* sağa ox */
-  font-size: 20px;
-  font-weight: bold;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover {background-color: #d1d0d0;}
-.swiper-button-prev {
+  }
+  .swiper-button-prev::after {
+    content: "⟵";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .swiper-button-next::after {
+    content: "⟶";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {background-color: #d1d0d0;}
+  .swiper-button-prev {
     right: 60px;
     left: auto;
-}
-.swiper-button-next {right: 0;}
-
-.ev {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.ev_img {
-    position: relative;
-    width: 100%;
-    height: 176px;
-}
-.ev_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.ev_info {
-    height: 122px;
-    margin: 0;
-    padding: 14px;
-}
-.ev_qiymet{
-    font: 600 20px "Poppins", sans-serif;
-    line-height: 100%;
-    letter-spacing: 0%;
+  }
+  .swiper-button-next {right: 0;}
+  .ev {
+    width: 288px;
+    height: 309px;
+  }
+  .ev_img {height: 176px;}
+  .ev_info {height: 122px;}
+  .ferqli_ozellikler {padding: 16px;}
+  .ferqli_ozellikler .ferqli_top .ferqli_top_left {gap: 10px;}
+  .ferqli_ozellikler .ferqli_top .heart_icon,
+  .ferqli_ozellikler .king_icon,
+  .ferqli_ozellikler .diamond_icon {
+    width: 26px;
+    height: 26px;
+  }
+  .ferqli_ozellikler .ferqli_bottom .ferqli_bottom_right .percent_icon,
+  .ferqli_ozellikler .ferqli_bottom .ferqli_bottom_right .check_icon {
+    width: 26px;
+    height: 26px;
+  }
+  .ferqli_ozellikler .ferqli_bottom .ferqli_bottom_right {gap: 10px;}
+  .ev_qiymet {
+    font-size: 20px;
     height: 31.75px;
-    color: var(--txt-color4);
-}
-.ev_unvan{
-    font: 400 16px "Poppins", sans-serif;
-    color: var(--txt-color2);
+  }
+  .ev_unvan {
+    font-size: 16px;
     height: 25.4px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-.ev_details{
-    display: flex;
-    align-items: center;
-    height: 24.34px;
-}
-.ev_otaq_sayi, .ev_kvadrat, .ev_mertebe{
-    font: 400 13px "Poppins", sans-serif;
-    color: var(--txt-color2);
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-.ev_otaq_sayi{
-    border-right: 0.5px solid var(--border-color2);
-    padding-right: 12px;
-}
-.ev_kvadrat{
-    border-right: 0.5px solid var(--border-color2);
-    padding: 0 12px;
-}
-.ev_mertebe{padding: 0 12px;}
-.elan_date{
-    display: flex;
-    align-items: center;
-    font: 400 12px "Poppins", sans-serif;
-    color: var(--txt-color5);
+  }
+  .ev_details {height: 24.34px;}
+  .ev_otaq_sayi {padding-right: 12px;}
+  .ev_kvadrat {padding: 0 12px;}
+  .ev_mertebe {padding-left: 12px;}
+  .ev_otaq_sayi,
+  .ev_kvadrat,
+  .ev_mertebe {font-size: 13px;}
+  .elan_date {
+    font-size: 12px;
     height: 31.75px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-.ferqli_ozellikler{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 16px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .ferqli_top{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .ferqli_top_left{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .heart_icon {
-            width: 26px;
-            height: 26px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            i{
-                font-size: 24px;
-                color: #ffffffe1;
-            }
-        }
-    }
-    .ferqli_bottom{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .ferqli_bottom_left{
-            span{
-                background-color: var(--bg-color3);
-                padding: 3px 14px;
-                border: none;
-                border-radius: 30px;
-                text-align: center;
-                font: 500 12px "Poppins", sans-serif;
-                line-height: 100%;
-                letter-spacing: 0%;
-                vertical-align: middle;
-                color: var(--txt-color6);
-            }
-        }
-        .ferqli_bottom_right{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            .check_icon{
-                width: 26px;
-                height: 26px;
-            }
-            .percent_icon{
-                width: 26px;
-                height: 26px;
-                border-radius: 50%;
-                background-color: var(--bg-color5);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: var(--bg-color3);
-                font-weight: bold;
-            }
-        }
-    }
-    .king_icon, .diamond_icon{
-        width: 26px;
-        height: 26px;
-        border-radius: 50%;
-        background-color: var(--bg-color3);    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-            width: 18px;
-            height: 14px;
-        }
-    }
-}
-
-@media (max-width: 860px){
-    .swiper-button-next,
-    .swiper-button-prev {display: none;}
-    .hamisina_bax{margin: 0;}
-    .kv_ev_qiymet{display: none;}
+  }
 }

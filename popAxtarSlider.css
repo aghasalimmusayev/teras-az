@@ -1,27 +1,29 @@
-:root{
-  --bg_color: #00AF91;
+:root {
+  --bg_color: #00af91;
   --bg-color2: #eee;
   --bg-color3: #fff;
-  --bg-color4: #D9DBE9;
+  --bg-color4: #d9dbe9;
   --txt-color: #fff;
-  --txt-color2: #14142B;
+  --txt-color2: #14142b;
   --txt-color3: #007965;
   --txt-color4: #008847;
-  --border-color: #D9DBE9;
+  --border-color: #d9dbe9;
 }
-.popAxtarisSlider{
-  margin-top: 30px;
+.popAxtarisSlider {
+  margin-top: 20px;
   padding: 0 50px;
   position: relative;
   height: 42px;
 }
-.pop_axtaris_box{
+.pop_axtaris_box {
   max-width: 100%;
   height: fit-content;
   overflow: auto;
   scroll-behavior: smooth;
 }
-.pop_axtaris_box::-webkit-scrollbar{display: none;}
+.pop_axtaris_box::-webkit-scrollbar {
+  display: none;
+}
 .pop_axtaris_content {
   width: fit-content;
   height: 42px;
@@ -30,7 +32,7 @@
   align-items: center;
   gap: 10px;
 }
-.pop_axtar_slide{
+.pop_axtar_slide {
   width: fit-content;
   height: fit-content;
 }
@@ -47,17 +49,18 @@
   border-radius: 32px;
   padding: 5px 30px;
 }
-.pop_button_prev{
+.pop_button_prev {
   position: absolute;
   top: 5px;
   left: 0;
 }
-.pop_button_next{
+.pop_button_next {
   position: absolute;
   top: 5px;
   right: 0;
 }
-.pop_button_prev i,.pop_button_next i{
+.pop_button_prev i,
+.pop_button_next i {
   font-size: 18px;
   color: black;
   padding: 7px 10px;
@@ -65,7 +68,17 @@
   color: var(--txt-color4);
 }
 
-@media (max-width:860px) {
- .pop_axtar_slider_btns{display: none;} 
- .popAxtarisSlider{padding: 0;}
+@media (max-width: 860px) {
+  .pop_axtar_slider_btns {
+    display: none;
+  }
+  .popAxtarisSlider {
+    margin-top: 30px;
+  }
+  .popAxtarisSlider {
+    padding: 0;
+  }
+  .pop_axtar_slide a {
+    font-size: 12px;
+  }
 }

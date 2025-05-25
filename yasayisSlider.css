@@ -1,0 +1,156 @@
+:root {
+  --bg_color: #00af91;
+  --bg-color2: #eee;
+  --bg-color3: #fff;
+  --bg-color4: #d9dbe9;
+  --bg-color5: #ffc837;
+  --txt-color: #fff;
+  --txt-color2: #14142b;
+  --txt-color3: #007965;
+  --txt-color4: #00af91;
+  --txt-color5: #6e7191;
+  --txt-color6: #462255;
+  --border-color: #d9dbe9;
+  --border-color2: #a0a3bd;
+}
+
+#yasayisKompleksleri {
+  position: relative;
+  margin: 40px 0;
+}
+.kv_ev_qiymet {display: none;}
+.yas_komp_ev_qiymet {
+  font: 600 18px "Poppins", sans-serif;
+  color: var(--txt-color2);
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.yas_komp_ev_kv {
+  font: 400 16px "Poppins", sans-serif;
+  color: var(--txt-color2);
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.yas_komp_ev_filter {
+  border: none;
+  border-radius: 36px;
+  background-color: var(--bg_color);
+  color: var(--bg-color3);
+  text-align: center;
+  width: 128px;
+  height: 40px;
+  font: 400 16px "Poppins", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.swiper{height: 241px;}
+#yasayisKompleksleri .swiper-slide {height: 241px;}
+.bina_park {
+  width: 166px;
+  height: 241px;
+  display: flex;
+  flex-direction: column;
+}
+.bina_park_img {
+  position: relative;
+  width: 100%;
+  height: 121px;
+}
+.bina_park_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; ;
+}
+.bina_park_img .ferqli_ozellikler{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px; /*! Problem buradadir*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box !important;
+}
+#yasayisKompleksleri .ferqli_bottom_right{display: none;}
+.bina_park_info {padding: 8px;}
+.bina_park_qiymet {
+  font: 600 16px "Poppins", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0%;
+  height: 20px;
+  color: var(--txt-color4);
+}
+.bina_park_name {
+  font: 600 12px "Poppins", sans-serif;
+  color: var(--txt-color2);
+  height: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.bina_park_sirket,
+.bina_park_unvan,
+.bina_park_unvan2 {
+  font: 400 12px "Poppins", sans-serif;
+  color: var(--txt-color2);
+  height: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.bina_park .ferqli_top {justify-content: end;}
+@media (min-width: 480px) {
+  /* #yasayisKompleksleri .swiper-slide{height: 241px !important;} */
+}
+@media (min-width: 860px) {
+  #yasayisKompleksleri {margin: 80px 0;}
+  .section_head {font-size: 30px;}
+  .hamisina_bax {
+    margin-right: 150px;
+    font-size: 18px;
+  }
+  .kv_ev_qiymet {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  .swiper{height: 691px;}
+  #yasayisKompleksleri .swiper-slide{
+    width: 288px !important;
+    height: 338px !important;
+  }
+  #yasayisKompleksleri .swiper-button-next,
+  #yasayisKompleksleri .swiper-button-prev {top: 15px;}
+  .bina_park{
+    width: 288px;
+    height: 338px;
+  }
+  .bina_park_img{height: 176px;}
+  #yasayisKompleksleri .ferqli_bottom_right{display: flex;}
+  .bina_park_info {padding: 14px;}
+  .bina_park_qiymet {
+    font-size: 20px;
+    height: 29.8px;
+  }
+  .bina_park_name {
+    font-size: 16px;
+    height: 29.8px;
+  }
+  .bina_park_sirket,
+  .bina_park_unvan,
+  .bina_park_unvan2 {
+    font-size: 16px;
+    height: 23.84px;
+  }
+}
+@media(min-width: 1200px) {
+  .swiper{height: 700px;}
+}
