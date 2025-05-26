@@ -1,0 +1,109 @@
+:root{
+    --bg_color: #00AF91;
+    --bg-color2: #eee;
+    --bg-color3: #fff;
+    --bg-color4: #D9DBE9;
+    --txt-color: #fff;
+    --txt-color2: #14142B;
+    --txt-color3: #007965;
+    --txt-color4: #38BD7D;
+    --border-color: #D9DBE9;
+}
+
+.footer_bg{
+    padding: 30px 0 30px;
+    background-color: var(--txt-color2);
+}
+.footer_content{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: 30px;
+    border-bottom: 1px solid var(--txt-color);
+    padding-bottom: 40px;
+}
+.footer_content a{
+    font: 500 16px "Poppins",  sans-serif;
+    color: var(--txt-color);
+    height: 24px;
+    width: fit-content;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.mail_adress{display: none;}
+.phone_number{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.calling{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    i{color: var(--bg-color3);}
+    a{height: fit-content;}
+}
+.f_elaqe{
+    font: 600 18px "Poppins", sans-serif;
+    color: var(--txt-color);
+    height: 27px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.footer_social{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    a{height: fit-content;}
+}
+.f_social_icon{
+    background-color: var(--bg-color3);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f_social_icon i{
+    font-size: 16px;
+    padding: 10px;
+    color: var(--txt-color3);
+    cursor: pointer;
+    transition: .3s;
+}
+.f_social_icon i:hover{color: var(--color2);}
+.copy_right{
+    font: 400 14px "Poppins", sans-serif;
+    color: var(--txt-color);
+    max-height: 21px;
+    height: auto;
+    padding: 26px 0;
+    letter-spacing: 0%;
+    span{white-space: nowrap;}
+}
+@media(min-width:860px) {
+    .footer_bg{padding: 60px 0 30px;}
+    .footer_content{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-auto-flow: column;
+        align-items: self-start;
+        gap: 0;
+        padding-bottom: 60px;
+    }
+    .f_elaqe{display: none;}
+    .mail_adress{
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        i{color: var(--txt-color);}
+        a{height: fit-content;}
+    }
+    .phone_number{margin-left: 50px;}
+    .footer_social{justify-content: end;}
+}
