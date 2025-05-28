@@ -1,19 +1,35 @@
 :root {
   --bg_color: #00af91;
-  --bg-color2: #eee;
   --bg-color3: #fff;
-  --bg-color4: #d9dbe9;
   --bg-color5: #ffc837;
+  --bg-color6: #F58634;
   --txt-color: #fff;
   --txt-color2: #14142b;
-  --txt-color3: #007965;
   --txt-color4: #00af91;
-  --txt-color5: #6e7191;
   --txt-color6: #462255;
   --border-color: #d9dbe9;
-  --border-color2: #a0a3bd;
 }
-
+#yasayisKompleksleri .my_slider {margin-top: 30px;}
+#yasayisKompleksleri .swiper {
+  width: 100%;
+  height: 241px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+#yasayisKompleksleri .swiper-slide {
+  width: 155px !important;
+  height: 241px !important;
+  margin: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #c5c3c3;
+  border-radius: 12px;
+}
+#yasayisKompleksleri .swiper-button-next,
+#yasayisKompleksleri .swiper-button-prev {display: none;}
 #yasayisKompleksleri {
   position: relative;
   margin: 40px 0;
@@ -48,8 +64,6 @@
   letter-spacing: 0%;
   vertical-align: middle;
 }
-.swiper{height: 241px;}
-#yasayisKompleksleri .swiper-slide {height: 241px;}
 .bina_park {
   width: 166px;
   height: 241px;
@@ -66,21 +80,7 @@
   height: 100%;
   object-fit: cover; ;
 }
-.bina_park_img .ferqli_ozellikler{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 10px; /*! Problem buradadir*/
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box !important;
-}
-#yasayisKompleksleri .ferqli_bottom_right{display: none;}
-.bina_park_info {padding: 8px;}
+.bina_park_info {padding: 10px;}
 .bina_park_qiymet {
   font: 600 16px "Poppins", sans-serif;
   line-height: 100%;
@@ -106,36 +106,141 @@
   letter-spacing: 0%;
   vertical-align: middle;
 }
-.bina_park .ferqli_top {justify-content: end;}
-@media (min-width: 480px) {
-  /* #yasayisKompleksleri .swiper-slide{height: 241px !important;} */
+#yasayisKompleksleri .ferqli_ozellikler{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+#yasayisKompleksleri .ferqli_top {
+  display: flex;
+  justify-content: end;
+}
+#yasayisKompleksleri .heart_icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#yasayisKompleksleri .heart_icon i {
+  font-size: 20px;
+  color: #ffffffe1;
+}
+#yasayisKompleksleri .ferqli_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#yasayisKompleksleri .ferqli_bottom_left {
+  background-color: var(--bg-color3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  border: none;
+  border-radius: 30px;
+  padding: 0 14px;
+  span {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    padding: 0;
+    text-align: center;
+    font: 400 10px "Poppins", sans-serif;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--txt-color6);
+  }
+  i{
+    color: var(--bg-color6);
+    transform: rotate(135deg);
+    margin-right: 7px;
+    font-size: 12px;
+    font-weight: thin;
+  }
+}
+#yasayisKompleksleri .ferqli_bottom_right{display: none;}
+#yasayisKompleksleri .check_icon {
+  width: 18px;
+  height: 18px;
+}
+#yasayisKompleksleri .percent_icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--bg-color5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bg-color3);
+  font-weight: bold;
+  font-size: 12px;
+}
+
 @media (min-width: 860px) {
   #yasayisKompleksleri {margin: 80px 0;}
-  .section_head {font-size: 30px;}
-  .hamisina_bax {
-    margin-right: 150px;
-    font-size: 18px;
-  }
   .kv_ev_qiymet {
     display: flex;
     align-items: center;
     gap: 34px;
   }
-  .swiper{height: 691px;}
+  #yasayisKompleksleri .swiper{height: 691px;}
   #yasayisKompleksleri .swiper-slide{
     width: 288px !important;
     height: 338px !important;
   }
   #yasayisKompleksleri .swiper-button-next,
-  #yasayisKompleksleri .swiper-button-prev {top: 15px;}
+  #yasayisKompleksleri .swiper-button-prev {
+    display: flex;
+    top: 15px;
+    transform: none;
+    width: 42px;
+    height: 42px;
+    background-color: #eee;
+    color: #00af91;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10;
+    cursor: pointer;
+  }
+  #yasayisKompleksleri .swiper-button-prev::after {
+    content: "⟵";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #yasayisKompleksleri .swiper-button-next::after {
+    content: "⟶";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #yasayisKompleksleri .swiper-button-next:hover,
+  #yasayisKompleksleri .swiper-button-prev:hover {background-color: #d1d0d0;}
+  #yasayisKompleksleri .swiper-button-prev {
+    right: 60px;
+    left: auto;
+  }
+  #yasayisKompleksleri .swiper-button-next {right: 0;}
   .bina_park{
     width: 288px;
     height: 338px;
   }
   .bina_park_img{height: 176px;}
-  #yasayisKompleksleri .ferqli_bottom_right{display: flex;}
-  .bina_park_info {padding: 14px;}
+  #yasayisKompleksleri .ferqli_bottom_right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .bina_park_info {padding: 16px;}
   .bina_park_qiymet {
     font-size: 20px;
     height: 29.8px;
@@ -152,5 +257,5 @@
   }
 }
 @media(min-width: 1200px) {
-  .swiper{height: 700px;}
+  #yasayisKompleksleri .swiper{height: 700px;}
 }

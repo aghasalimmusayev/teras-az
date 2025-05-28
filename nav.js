@@ -8,9 +8,7 @@ let topLine = document.querySelector(".top_line");
 
 menu.onclick = function(){
     if($("#checkbox").is(":checked")){
-        fav_lang.style.left = "0"
         links.style.left = 0;
-        contact.style.left = 0;
         logo.style.position = "absolute";
         searchLogin.style.display = "none";
         menu.style.right = "5%"
@@ -18,9 +16,7 @@ menu.onclick = function(){
         menu.style.backgroundColor = "var(--color4)"
     }
     else{
-        fav_lang.style.left = "-100%"
         links.style.left = "-100%";
-        contact.style.left = "-100%";
         logo.style.position = "static";
         searchLogin.style.display = "flex";
         menu.style.right = "auto"
