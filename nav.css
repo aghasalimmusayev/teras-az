@@ -141,13 +141,14 @@
     background-color: var(--color5);
     position: absolute;
     width: 100%;
+    height: 100vh;
     top: 50%;
     left: -100%;
     padding: 0 5%;
     z-index: 101;
     transition: .3s;
 }
-.links1 li, .links2 li{margin: 20px 0;}
+.links1 li, .links2 li{margin: 25px 0;}
 .links1 a, .links2 a{
     position: relative;
     font: 500 16px "Poppins", sans-serif;
