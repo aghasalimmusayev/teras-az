@@ -1,0 +1,215 @@
+.villa_photos_slider {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+.swiper {
+  width: 100%;
+  height: 378px;
+  border-radius: 12px;
+  margin-left: 0 !important;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+#gunluk_villa .swiper-button-next,
+#gunluk_villa .swiper-button-prev {
+  width: 42px;
+  height: 42px;
+  background-color: #eee;
+  color: #00af91;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+  cursor: pointer;
+}
+#gunluk_villa .swiper-button-prev::after {
+  content: "⟵";
+  font-size: 20px;
+  font-weight: bold;
+}
+#gunluk_villa .swiper-button-next::after {
+  content: "⟶";
+  font-size: 20px;
+  font-weight: bold;
+}
+#gunluk_villa .swiper-button-next:hover,
+#gunluk_villa .swiper-button-prev:hover {
+  background-color: rgba(209, 208, 208, 0.9);
+  transform: scale(1.1);
+}
+.bottom_navigate {
+  position: absolute !important;
+  bottom: 11px !important;
+  left: 11px;
+  right: 11px;
+  z-index: 10;
+  width: calc(100% - 22px) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom_navigate a {
+  font: 600 16px "Poppins", sans-serif;
+  color: #14142B;
+  background-color: #fff;
+  padding: 5px 14px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+.bottom_navigate a:hover {
+  background-color: var(--bg_color);
+  color: var(--txt-color);
+}
+.custom-pagination{
+  background-color: #fff;
+  width: fit-content !important;
+  padding: 8px 14px !important;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end !important;
+  font: 600 16px "Poppins", sans-serif;
+  color: #14142B;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.villa_all_pictures {
+  background-color: var(--bg-color2);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.villa_photo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 580px;
+  flex-shrink: 0;
+}
+.villa_photo img {
+  width: 100%;
+  height: 183px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .villa_photos_slider {
+    width: 100%;
+    min-width: unset;
+  }
+  .villa_all_pictures {
+    flex-direction: column;
+  }
+  .villa_photo {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .villa_photo img {
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper {
+    height: 250px;
+  }
+  #gunluk_villa .swiper-button-next,
+  #gunluk_villa .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+  }
+  #gunluk_villa .swiper-button-next::after,
+  #gunluk_villa .swiper-button-prev::after {
+    font-size: 16px;
+  }
+  .bottom_navigate a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .custom-pagination {
+    font-size: 16px;
+    padding: 6px 12px !important;
+  }
+    #gunluk_villa {
+    padding: 30px 0;
+  }
+  .section_head {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .ev_unvanlari {
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .ev_unvanlari a {
+    font-size: 14px;
+    padding: 6px 20px;
+    height: 35px;
+  }
+  .villa_all_pictures {
+    padding: 8px;
+  }
+  .villa_photo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .villa_photo img {
+    height: 120px;
+  }
+}
+@media (max-width: 425px) {
+  .swiper {
+    height: 200px;
+  }
+  #gunluk_villa .swiper-button-next,
+  #gunluk_villa .swiper-button-prev {
+    display: none;
+  }
+  .bottom_navigate {
+    gap: 6px;
+  }
+  .bottom_navigate a {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  .custom-pagination {
+    font-size: 14px;
+    padding: 5px 10px !important;
+  }
+  .ev_unvanlari a {
+    font-size: 12px;
+    padding: 5px 15px;
+    height: 32px;
+  }
+  .villa_photo img {
+    height: 100px;
+  }
+}
