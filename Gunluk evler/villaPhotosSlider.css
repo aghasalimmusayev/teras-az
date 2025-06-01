@@ -1,4 +1,26 @@
-.villa_photos_slider {
+.ev_unvanlari {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.ev_unvanlari a {
+  font: 500 14px "Poppins", sans-serif;
+  color: var(--txt-color2);
+  height: 39px;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid var(--bg-color4);
+  border-radius: 15px;
+  padding: 9px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.elan_photos_slider {
   position: relative;
   flex: 1;
   min-width: 300px;
@@ -24,8 +46,8 @@
   object-fit: cover;
   border-radius: 12px;
 }
-#gunluk_villa .swiper-button-next,
-#gunluk_villa .swiper-button-prev {
+#elanDetail .swiper-button-next,
+#elanDetail .swiper-button-prev {
   width: 42px;
   height: 42px;
   background-color: #eee;
@@ -37,18 +59,18 @@
   z-index: 10;
   cursor: pointer;
 }
-#gunluk_villa .swiper-button-prev::after {
+#elanDetail .swiper-button-prev::after {
   content: "⟵";
   font-size: 20px;
   font-weight: bold;
 }
-#gunluk_villa .swiper-button-next::after {
+#elanDetail .swiper-button-next::after {
   content: "⟶";
   font-size: 20px;
   font-weight: bold;
 }
-#gunluk_villa .swiper-button-next:hover,
-#gunluk_villa .swiper-button-prev:hover {
+#elanDetail .swiper-button-next:hover,
+#elanDetail .swiper-button-prev:hover {
   background-color: rgba(209, 208, 208, 0.9);
   transform: scale(1.1);
 }
@@ -93,7 +115,7 @@
   letter-spacing: 0%;
   vertical-align: middle;
 }
-.villa_all_pictures {
+.elan_all_pictures {
   background-color: var(--bg-color2);
   border-radius: 12px;
   padding: 12px;
@@ -101,14 +123,14 @@
   align-items: flex-start;
   gap: 12px;
 }
-.villa_photo {
+.elan_photo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   width: 580px;
   flex-shrink: 0;
 }
-.villa_photo img {
+.elan_photo img {
   width: 100%;
   height: 183px;
   object-fit: cover;
@@ -118,18 +140,18 @@
 }
 
 @media (max-width: 1024px) {
-  .villa_photos_slider {
+  .elan_photos_slider {
     width: 100%;
     min-width: unset;
   }
-  .villa_all_pictures {
+  .elan_all_pictures {
     flex-direction: column;
   }
-  .villa_photo {
+  .elan_photo {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
   }
-  .villa_photo img {
+  .elan_photo img {
     height: 150px;
   }
 }
@@ -137,14 +159,14 @@
   .swiper {
     height: 250px;
   }
-  #gunluk_villa .swiper-button-next,
-  #gunluk_villa .swiper-button-prev {
+  #elanDetail .swiper-button-next,
+  #elanDetail .swiper-button-prev {
     width: 36px;
     height: 36px;
     margin-top: -18px;
   }
-  #gunluk_villa .swiper-button-next::after,
-  #gunluk_villa .swiper-button-prev::after {
+  #elanDetail .swiper-button-next::after,
+  #elanDetail .swiper-button-prev::after {
     font-size: 16px;
   }
   .bottom_navigate a {
@@ -155,33 +177,20 @@
     font-size: 16px;
     padding: 6px 12px !important;
   }
-    #gunluk_villa {
-    padding: 30px 0;
-  }
-  .section_head {
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 15px;
-  }
-  .ev_unvanlari {
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 20px;
-  }
+  #elanDetail {padding: 30px 0;}
   .ev_unvanlari a {
-    font-size: 14px;
-    padding: 6px 20px;
-    height: 35px;
+    padding: 5px 30px;
+    border-radius: 10px;
   }
-  .villa_all_pictures {
+  .ev_unvanlari a:hover {background-color: var(--bg-color2);}
+  .elan_all_pictures {
     padding: 8px;
   }
-  .villa_photo {
+  .elan_photo {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
-  .villa_photo img {
+  .elan_photo img {
     height: 120px;
   }
 }
@@ -189,8 +198,8 @@
   .swiper {
     height: 200px;
   }
-  #gunluk_villa .swiper-button-next,
-  #gunluk_villa .swiper-button-prev {
+  #elanDetail .swiper-button-next,
+  #elanDetail .swiper-button-prev {
     display: none;
   }
   .bottom_navigate {
@@ -209,7 +218,7 @@
     padding: 5px 15px;
     height: 32px;
   }
-  .villa_photo img {
+  .elan_photo img {
     height: 100px;
   }
 }
