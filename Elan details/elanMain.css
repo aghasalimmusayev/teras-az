@@ -21,7 +21,7 @@
   height: fit-content;
   padding: 50px 0;
 }
-.section_head {
+#elanDetail .section_head {
   font: 600 24px "Poppins", sans-serif;
   color: var(--txt-color2);
   height: 51px;
@@ -39,7 +39,7 @@
   margin-top: 32px;
   gap: 20px;
 }
-.ev_qiymet {
+.elan_ev_qiymet {
   width: 100%;
   height: 44px;
   display: flex;
@@ -260,12 +260,12 @@ hr{
   }
 }
 @media (min-width: 768px) {
-  .section_head {
+  #elanDetail .section_head {
     font-size: 34px;
     margin-bottom: 20px;
   }
   .elan_qiymetler {gap: 11px;}
-  .ev_qiymet {
+  .elan_ev_qiymet {
     width: 368px;
     height: 64px;
     border-radius: 15px;
