@@ -20,6 +20,7 @@
   align-items: center;
   transition: all 0.3s ease;
 }
+.ev_unvanlari a:hover {background-color: var(--bg-color2);}
 .elan_photos_slider {
   position: relative;
   flex: 1;
@@ -182,7 +183,6 @@
     padding: 5px 30px;
     border-radius: 10px;
   }
-  .ev_unvanlari a:hover {background-color: var(--bg-color2);}
   .elan_all_pictures {
     padding: 8px;
   }
