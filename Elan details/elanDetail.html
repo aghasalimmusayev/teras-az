@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../nav.css">
     <link rel="stylesheet" href="./elanMain.css">
     <link rel="stylesheet" href="./villaPhotosSlider.css">
+    <link rel="stylesheet" href="./butunFotolar.css">
     <link rel="stylesheet" href="./benzerElanlar.css">
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -20,7 +21,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Teras.az</title>
 </head>
 
@@ -166,7 +166,7 @@
                             <div class="swiper-button-prev"></div>
                         </div>
                         <div class="bottom_navigate">
-                            <a href="">Bütün fotolara bax</a>
+                            <button class="sekillere_bax">Bütün fotolara bax</button>
                             <div class="custom-pagination"></div>
                         </div>
                     </div>
@@ -205,6 +205,38 @@
                         </button>
                     </div>
                 </div>
+        <div class="butun_fotolar_slider">
+            <div class="slider-container">
+                <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <div class="swiper mySwiper23">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="../Source/ecd75764aba0c59289db96bd343df5b9f12436d2.png" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../Source/ecd75764aba0c59289db96bd343df5b9f12436d2.png" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../Source/ecd75764aba0c59289db96bd343df5b9f12436d2.png" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../Source/ecd75764aba0c59289db96bd343df5b9f12436d2.png" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../Source/ecd75764aba0c59289db96bd343df5b9f12436d2.png" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../Source/ecd75764aba0c59289db96bd343df5b9f12436d2.png" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../Source/ecd75764aba0c59289db96bd343df5b9f12436d2.png" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../Source/ecd75764aba0c59289db96bd343df5b9f12436d2.png" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="../Source/ecd75764aba0c59289db96bd343df5b9f12436d2.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next mySwiper23_next"></div>
+                    <div class="swiper-button-prev mySwiper23_prev"></div>
+                </div>
+                <div class="show_pages">
+                    <div class="fotolar-pagination"></div>
+                </div>
+            </div>
+        </div>
                 <hr>
                 <h2 class="section_head_small">Günlük kirayə villa</h2>
                 <div class="elan_full_detail">
@@ -827,6 +859,16 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+        var swiper23 = new Swiper(".mySwiper23", {
+            pagination: {
+                el: ".fotolar-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".mySwiper23_next",
+                prevEl: ".mySwiper23_prev",
+            },
+        });
         var swiper22 = new Swiper(".mySwiper22", {
             slidesPerView: 4,
             grid: { rows: 2, },
@@ -847,6 +889,7 @@
         });
     </script>
     <script src="../nav.js"></script>
+    <script src="./elanDetails.js"></script>
 </body>
 
 </html>

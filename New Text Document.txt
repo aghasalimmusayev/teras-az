@@ -1,4 +1,5 @@
 navdaki linkler mobile-de coxdu, amma desktop-da az
 3 cur etrafli axtaris var, 3-u debir birinden ferqli
 Navbar fixed olsun?
-sekillerin pixeli coxdu
+elan details sehifesinde bezi sekiller slider-de, bezileri ayrica, 
+	bes butun fotolara bax edende nece?

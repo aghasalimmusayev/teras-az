@@ -73,7 +73,6 @@
 #elanDetail .swiper-button-next:hover,
 #elanDetail .swiper-button-prev:hover {
   background-color: rgba(209, 208, 208, 0.9);
-  transform: scale(1.1);
 }
 .bottom_navigate {
   position: absolute !important;
@@ -86,18 +85,20 @@
   justify-content: space-between;
   align-items: center;
 }
-.bottom_navigate a {
+.bottom_navigate button {
   font: 600 16px "Poppins", sans-serif;
   color: #14142B;
   background-color: #fff;
   padding: 5px 14px;
+  border: none;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   transition: .3s;
 }
-.bottom_navigate a:hover {
+.bottom_navigate button:hover {
   background-color: var(--bg_color);
   color: var(--txt-color);
 }
@@ -170,7 +171,7 @@
   #elanDetail .swiper-button-prev::after {
     font-size: 16px;
   }
-  .bottom_navigate a {
+  .bottom_navigate button {
     font-size: 14px;
     padding: 6px 12px;
   }
@@ -205,7 +206,7 @@
   .bottom_navigate {
     gap: 6px;
   }
-  .bottom_navigate a {
+  .bottom_navigate button {
     font-size: 13px;
     padding: 5px 10px;
   }

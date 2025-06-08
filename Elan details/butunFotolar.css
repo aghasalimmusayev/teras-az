@@ -1,0 +1,179 @@
+.butun_fotolar_slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.473);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5%;
+}
+.butun_fotolar_slider.active {display: flex;}
+.butun_fotolar_slider .slider-container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: transparent;
+}
+.butun_fotolar_slider .swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.butun_fotolar_slider .swiper-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 15px;
+}
+.butun_fotolar_slider .swiper-slide img {
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.butun_fotolar_slider .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    height: 25px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.butun_fotolar_slider .mySwiper23_next,
+.butun_fotolar_slider .mySwiper23_prev {
+    width: 35px !important;
+    height: 35px !important;
+    background-color: #fff !important;
+    color: #00af91;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% + 20px);
+    transform: translateY(-50%);
+}
+.butun_fotolar_slider .mySwiper23_prev {left: 20px;}
+.butun_fotolar_slider .mySwiper23_next {right: 20px;}
+.butun_fotolar_slider .mySwiper23_prev::after {
+    content: "⟵";
+    font-size: 16px;
+    font-weight: bold;
+}
+.butun_fotolar_slider .mySwiper23_next::after {
+    content: "⟶";
+    font-size: 16px;
+    font-weight: bold;
+}
+.show_pages {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.butun_fotolar_slider .fotolar-pagination {
+    background-color: #fff;
+    width: fit-content !important;
+    padding: 4px 12px !important;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 600 12px "Poppins", sans-serif;
+    color: #14142B;
+}
+@media (min-width: 768px) {
+    .butun_fotolar_slider {padding: 30px;}
+    .butun_fotolar_slider .slider-container {
+        width: 100%;
+        height: 60vh;
+    }
+    .butun_fotolar_slider .swiper-slide {padding: 45px;}
+    .butun_fotolar_slider .close-btn {
+        font-size: 22px;
+        top: 15px;
+        right: 15px;
+    }
+    .butun_fotolar_slider .mySwiper23_prev {left: 5px;}
+    .butun_fotolar_slider .mySwiper23_next {right: 5px;}
+    .butun_fotolar_slider .mySwiper23_next:hover,
+    .butun_fotolar_slider .mySwiper23_prev:hover {background-color: #cfcbcb !important;}
+    .show_pages {bottom: 5px;}
+    .butun_fotolar_slider .fotolar-pagination {
+        font-size: 13px;
+        padding: 7px 16px !important;
+    }
+}
+@media (min-width: 991px) {
+    .butun_fotolar_slider {padding: 40px;}
+    .butun_fotolar_slider .slider-container {
+        max-width: 900px;
+        height: 70vh;
+    }
+    .butun_fotolar_slider .swiper-slide {padding: 55px;}
+    .butun_fotolar_slider .swiper {border-radius: 12px;}
+    .butun_fotolar_slider .swiper-slide img {border-radius: 12px !important;}
+    .butun_fotolar_slider .close-btn {
+        width: 45px;
+        height: 35px;
+        font-size: 28px;
+        border-radius: 12px;
+    }
+    .butun_fotolar_slider .mySwiper23_next,
+    .butun_fotolar_slider .mySwiper23_prev {
+        width: 42px !important;
+        height: 42px !important;
+    }
+    .butun_fotolar_slider .mySwiper23_prev::after,
+    .butun_fotolar_slider .mySwiper23_next::after {font-size: 24px !important;}
+    .show_pages {bottom: 7px;}
+    .butun_fotolar_slider .fotolar-pagination {
+        font-size: 16px;
+        padding: 8px 16px !important;
+        border-radius: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .butun_fotolar_slider .slider-container {
+        max-width: 1220px;
+        height: 80vh;
+        width: auto;
+    }
+    .butun_fotolar_slider .swiper-slide {padding: 66px;}
+    .butun_fotolar_slider .close-btn {
+        width: 49px;
+        height: 40px;
+        font-size: 30px;
+        top: 23px;
+        right: 12px;
+    }
+    .show_pages {bottom: 15px;}
+    .butun_fotolar_slider .mySwiper23_prev {left: 15px;}
+    .butun_fotolar_slider .mySwiper23_next {right: 15px;}
+    .butun_fotolar_slider .fotolar-pagination {padding: 5px 16px !important;}
+}
