@@ -1,13 +1,3 @@
-:root{
-    --bg_color: #00AF91;
-    --bg-color2: #eee;
-    --bg-color3: #fff;
-    --txt-color: #fff;
-    --txt-color2: #14142B;
-    --txt-color3: #007965;
-    --border-color: #D9DBE9;
-}
-
 .select_menu{
     width: 100%;
     cursor: pointer;
@@ -34,7 +24,7 @@
     position: absolute;
     width: 100%;
     background-color: var(--bg-color3);
-    border-radius: 5px;
+    border-radius: 12px;
     font: 400 14px "Poppins", sans-serif;
     color: var(--txt-color2);
     line-height: 100%;
@@ -42,15 +32,15 @@
     margin-top: 10px;
     max-height: 0;
     overflow-y: auto;
-    transition: 0.3s linear .2s;
+    transition: 0.3s;
     z-index: 10;
 }
 .option {
     padding: 10px 15px;
     transition: 0.3s ease-in-out;
 }
-.option:hover{background-color: var(--border-color);}
-.option.selected{color: var(--txt-color3);font-weight: 550;}
+.option:hover{background-color: #e7fdf9;}
+.option.selected{color: var(--txt-color3);}
 .option_list::-webkit-scrollbar{
     width: 5px;
     background-color: var(--border-color);
@@ -67,5 +57,8 @@
         margin: auto;
         font-size: 16px;
     }
-    .option_list{font-size: 16px;}
+    .option_list{
+        font-size: 16px;
+
+    }
 }

@@ -1,14 +1,3 @@
-:root {
-  --bg_color: #00af91;
-  --bg-color3: #fff;
-  --bg-color5: #ffc837;
-  --bg-color6: #F58634;
-  --txt-color: #fff;
-  --txt-color2: #14142b;
-  --txt-color4: #00af91;
-  --txt-color6: #462255;
-  --border-color: #d9dbe9;
-}
 #yasayisKompleksleri .my_slider {margin-top: 30px;}
 #yasayisKompleksleri .swiper {
   width: 100%;
@@ -160,7 +149,7 @@
     color: var(--txt-color6);
   }
   i{
-    color: var(--bg-color6);
+    color: var(--bg-color7);
     transform: rotate(135deg);
     margin-right: 7px;
     font-size: 12px;

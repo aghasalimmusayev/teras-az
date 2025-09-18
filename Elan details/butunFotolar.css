@@ -31,7 +31,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background-color: var(--bg-color2);
     padding: 15px;
 }
 .butun_fotolar_slider .swiper-slide img {
@@ -47,8 +47,8 @@
     right: 20px;
     width: 35px;
     height: 25px;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--bg-color3);
+    color: var(--txt-color11);
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -63,8 +63,8 @@
 .butun_fotolar_slider .mySwiper23_prev {
     width: 35px !important;
     height: 35px !important;
-    background-color: #fff !important;
-    color: #00af91;
+    background-color: var(--bg-color3) !important;
+    color: var(--txt-color4);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -97,7 +97,7 @@
     align-items: center;
 }
 .butun_fotolar_slider .fotolar-pagination {
-    background-color: #fff;
+    background-color: var(--bg-color3);
     width: fit-content !important;
     padding: 4px 12px !important;
     border-radius: 15px;
@@ -105,7 +105,7 @@
     justify-content: center;
     align-items: center;
     font: 600 12px "Poppins", sans-serif;
-    color: #14142B;
+    color: var(--txt-color2);
 }
 @media (min-width: 768px) {
     .butun_fotolar_slider {padding: 30px;}

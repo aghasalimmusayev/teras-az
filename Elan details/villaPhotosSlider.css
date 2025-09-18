@@ -35,7 +35,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #444;
+  background: var(--bg-color16);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,8 +51,8 @@
 #elanDetail .swiper-button-prev {
   width: 42px;
   height: 42px;
-  background-color: #eee;
-  color: #00af91;
+  background-color: var(--bg-color2);
+  color: var(--txt-color4);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -87,8 +87,8 @@
 }
 .bottom_navigate button {
   font: 600 16px "Poppins", sans-serif;
-  color: #14142B;
-  background-color: #fff;
+  color: var(--txt-color2);
+  background-color: var(--bg-color3);
   padding: 5px 14px;
   border: none;
   border-radius: 15px;
@@ -103,7 +103,7 @@
   color: var(--txt-color);
 }
 .custom-pagination{
-  background-color: #fff;
+  background-color: var(--bg-color3);
   width: fit-content !important;
   padding: 8px 14px !important;
   border-radius: 15px;
@@ -112,7 +112,7 @@
   align-items: center;
   text-align: end !important;
   font: 600 16px "Poppins", sans-serif;
-  color: #14142B;
+  color: var(--txt-color2);
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;

@@ -3,3 +3,4 @@ navdaki linkler mobile-de coxdu, amma desktop-da az
 Navbar fixed olsun?
 elan details sehifesinde bezi sekiller slider-de, bezileri ayrica, 
 	bes butun fotolara bax edende nece?
+elan details-de header yoxdu, amma nav-daki search iconuna basdiqda axtaris section-u acilmalidir, nece olacaq?

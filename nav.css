@@ -1,21 +1,9 @@
-:root{
-    --color1: #00AF91;
-    --color2: #14142B;
-    --color3: #000;
-    --color4: #eee;
-    --color5: #fff;
-    --color6: #38BD7D;
-    --color7: #F58634;
-    --color8: #00AF91;
-    --color9: #D9DBE9;
-    --color10: #A0A3BD;
-}
 .container {
     width: 90%;
     margin: auto;
 }
 .top_line{position: relative;}
-.first_line_bg{box-shadow: 2px 2px 5px var(--color4);}
+.first_line_bg{box-shadow: 2px 2px 5px var(--bg-color2);}
 .first_line{
     width: 100%;
     min-height: 60px;
@@ -48,11 +36,11 @@
     line-height: 100%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: var(--color2);
+    color: var(--txt-color2);
 }
 .top_right .fav_lang{display: none;}
 .links .fav_lang{
-    background-color: var(--color5);
+    background-color: var(--bg-color3);
     display: flex;
     padding: 10px 0;
     flex-direction: row-reverse;
@@ -74,7 +62,7 @@
 .login_btn {
   position: relative;
   font: 500 16px "Poppins", sans-serif;
-  color: var(--color8);
+  color: var(--txt-color9);
   background: none;
   border: none;
   padding: 0;
@@ -90,7 +78,7 @@
   width: 100%;
   transform: scale(0);
   height: 2px;
-  background-color: var(--color8);
+  background-color: var(--bg-color10);
   transition: all 0.3s;
 }
 .login_btn:hover::after {transform: scale(1);}
@@ -108,14 +96,14 @@
     width: 222px;
     height: 40px;
     padding: 0 10px;
-    border: 1px solid var(--color9);
+    border: 1px solid var(--border-color);
     border-radius: 15px;
     box-sizing: border-box;
     outline: none;
 }
 .search_inp input::placeholder{
     font: 400 12px "Poppins", sans-serif;
-    color: var(--color10);
+    color: var(--txt-color10);
 }
 
 .second_line{
@@ -133,12 +121,12 @@
 }
 .logo a {
     font: 400 26px 'Prototype', sans-serif;
-    color: var(--color1);
+    color: var(--txt-color9);
     line-height: 100%;
     letter-spacing: 0%;
 }
 .links{
-    background-color: var(--color5);
+    background-color: var(--bg-color3);
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -152,7 +140,7 @@
 .links1 a, .links2 a{
     position: relative;
     font: 500 16px "Poppins", sans-serif;
-    color: var(--color2);
+    color: var(--txt-color2);
     line-height: 100%;
     letter-spacing: 0%;
     white-space: nowrap;
@@ -167,13 +155,13 @@
     width: 100%;
     transform: scale(0);
     height: 2px;
-    background-color: var(--color2);
+    background-color: var(--bg-color8);
     transition: all 0.3s;
 }
 .links1 a:hover::after{transform: scale(1);}
 .elan_btn{
-    background-color: var(--color7);
-    color: var(--color5);
+    background-color: var(--bg-color7);
+    color: var(--txt-color);
     font: 600 16px "Gilroy", sans-serif;
     display: flex;
     justify-content: center;
@@ -185,7 +173,7 @@
     cursor: pointer;
     transition: .3s;
 }
-.elan_btn:hover{color: var(--color2);}
+.elan_btn:hover{color: var(--txt-color2);}
 
 .favorit{
     width: 126px;
@@ -195,14 +183,14 @@
     justify-content: space-between;
 }
 .favorit i{
-    color: var(--color2); 
+    color: var(--txt-color2); 
     cursor: pointer;
     transition: .3s;
 }
-.favorit i:hover{color: var(--color1);}
+.favorit i:hover{color: var(--txt-color9);}
 .favorit span{
     font: 500 16px "Poppins", sans-serif;
-    color: var(--color2);
+    color: var(--txt-color2);
     line-height: 100%;
     letter-spacing: 0%;
     vertical-align: middle;
@@ -218,7 +206,7 @@
     cursor: pointer;
 }
 .contact{
-    background-color: var(--color5);
+    background-color: var(--bg-color3);
     width: 100%;
     transition: .3s;
     display: flex;
@@ -230,7 +218,7 @@
     padding: 20px 0;
 }
 .social_icon{
-    background-color: var(--color6);
+    background-color: var(--bg-color9);
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -241,11 +229,11 @@
 .social_icon i{
     font-size: 16px;
     padding: 10px;
-    color: var(--color5);
+    color: var(--txt-color);
     cursor: pointer;
     transition: .3s;
 }
-.social i:hover{color: var(--color2);}
+.social i:hover{color: var(--txt-color2);}
 
 
 @media (min-width: 860px) {

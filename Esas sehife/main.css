@@ -1,13 +1,3 @@
-:root{
-    --bg_color: #00AF91;
-    --bg-color2: #eee;
-    --bg-color3: #fff;
-    --bg-color4: #D9DBE9;
-    --txt-color: #fff;
-    --txt-color2: #14142B;
-    --txt-color3: #007965;
-    --border-color: #D9DBE9;
-}
 #bigBtns{padding: 26px 0;}
 #bigBtns .bigBtns_content{
     display: flex;
