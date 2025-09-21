@@ -1,0 +1,100 @@
+#loginPage {
+    padding: 40px 0;
+    width: 100%;
+    min-height: 80vh;
+}
+.loginPage_content {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reg_page_navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.reg_page_navigation a {
+    font: 600 22px "Poppins", sans-serif;
+    color: var(--txt-color2);
+}
+.reg_page_navigation a { border-bottom: 2px solid transparent;}
+.reg_page_navigation a:last-child { border-bottom: 2px solid var(--bg-color10);}
+form{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form_email, .form_password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+form label {
+    font: 500 16px "Poppins", sans-serif;
+    color: var(--txt-color2);
+    letter-spacing: 0.75px;
+}
+form input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--border-color5);
+    border-radius: 10px;
+    outline: none;
+    padding: 15px;
+    box-sizing: border-box;
+    font: 400 14px "Poppins", sans-serif;
+    letter-spacing: 0.75px;
+}
+.form_password {position: relative;}
+.form_password img {
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.view_text {display: none;}
+.submit_btn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--border-color3);
+    border-radius: 10px;
+    background-color: var(--bg-color10);
+    color: var(--txt-color);
+    font: 500 16px "Poppins", sans-serif;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #loginPage {
+        width: 544px;
+        margin: auto;
+        padding: 80px 0 110px;
+    }
+    .loginPage_content {
+        padding: 52px 82px;
+    }
+    .reg_page_navigation {gap: 80px;}
+    form{ gap: 40px;}
+    .form_email, .form_password { gap: 15px;}
+    form input {
+        height: 48px;
+        border-radius: 16px;
+        font: 400 16px "Poppins", sans-serif;
+    }
+    .form_password img { bottom: 12px;}
+    .submit_btn {
+        height: 48px;
+        border-radius: 16px;
+        font: 500 18px "Poppins", sans-serif;
+    }
+}

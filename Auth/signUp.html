@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Source/home-icon.webp" type="image/svg+xml" />
+    <link rel="stylesheet" href="../colors.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="../menuBar.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="./signUp.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Teras.az</title>
+    <!-- https://www.figma.com/design/iPB0rmx4eKMcZjiCmUZHd2/Teras.az?node-id=0-1&p=f&t=CFbzqi0puwgaHkoN-0 -->
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav_content">
+            <div class="top_line">
+                <div class="first_line_bg">
+                    <div class="container">
+                        <div class="first_line">
+                            <div class="menu_bar">
+                                <input id="checkbox" type="checkbox">
+                                <label class="toggle" for="checkbox">
+                                    <div id="bar1" class="bars"></div>
+                                    <div id="bar2" class="bars"></div>
+                                    <div id="bar3" class="bars"></div>
+                                </label>
+                            </div>
+                            <div class="elaqe">
+                                <p>Əlaqə:</p>
+                                <div>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="tel:+994125467876">(012) 546 78 76</a>
+                                </div>
+                            </div>
+                            <div class="top_right">
+                                <div class="fav_lang">
+                                    <select name="" id="lang">
+                                        <option value="AZ">AZ</option>
+                                        <option value="RU">RU</option>
+                                    </select>
+                                    <div class="favorit">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>Seçilmişlər</span>
+                                    </div>
+                                </div>
+                                <div class="search_login">
+                                    <div class="search_inp">
+                                        <input type="text" placeholder="Kodla və ya sözlə axtarış">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <i id="searchToggleBtn" class="fa-solid fa-magnifying-glass"
+                                        onclick="searchBoxOpen()"></i>
+                                    <button class="login_btn">Giriş</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="second_line">
+                        <div class="logo">
+                            <a href="#">Teras.az</a>
+                        </div>
+                        <div class="links">
+                            <div class="fav_lang">
+                                <select name="" id="lang">
+                                    <option value="AZ">AZ</option>
+                                    <option value="RU">RU</option>
+                                </select>
+                                <div class="favorit">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>Seçilmişlər</span>
+                                </div>
+                            </div>
+                            <ul class="links1">
+                                <li><a href="">Alqı-satqı</a></li>
+                                <li><a href="">Kirayə</a></li>
+                                <li><a href="">Biznes mərkəzləri</a></li>
+                                <li><a href="">Agentliklər</a></li>
+                                <li><a href="">Yaşayış kompleksləri</a></li>
+                            </ul>
+                            <ul class="links2">
+                                <li><a href="">Qaydalar</a></li>
+                                <li><a href="">İstifadəçi şərtləri</a></li>
+                                <li><a href="">Tez -tez verilən suallar</a></li>
+                                <li><a href="">Haqqımızda</a></li>
+                            </ul>
+                            <div class="contact">
+                                <div class="elaqe">
+                                    <p>Əlaqə: </p>
+                                    <div>
+                                        <i class="fa-solid fa-phone"></i>
+                                        <a href="tel:+994125467876">(012) 546 78 76</a>
+                                    </div>
+                                </div>
+                                <div class="social">
+                                    <div class="social_icon">
+                                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="social_icon">
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                    <div class="social_icon">
+                                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="elan_btn">Elan yerləşdir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section id="signUpPage">
+            <div class="container">
+                <div class="signUpPage_content">
+                    <div class="reg_page_navigation">
+                        <a href="./signUp.html">Qeydiyyat</a>
+                        <a href="./login.html">Giriş</a>
+                    </div>
+                    <div class="social_reg">
+                        <p>Sosial media hesabı ilə qeydiyyatdan keç</p>
+                        <div class="social_reg_btns">
+                            <button>
+                                <img src="../Source/google_logo.png" alt="">
+                                <span>Google</span>
+                            </button>
+                            <button>
+                                <img src="../Source/facebook_logo.png" alt="">
+                                <span>Facebook</span>
+                            </button>
+                        </div>
+                        <p>və ya</p>
+                    </div>
+                    <form>
+                        <div class="form_name">
+                            <label for="">Ad, Soyad</label>
+                            <input type="text">
+                        </div>
+                        <div class="form_email">
+                            <label for="">Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="form_phone">
+                            <label for="">Telefon</label>
+                            <input type="number">
+                        </div>
+                        <div class="form_password">
+                            <label for="">Parol</label>
+                            <input type="password">
+                            <img class="view_text" src="../Source/view.png" alt="passwordView">
+                            <img class="hide_text" src="../Source/hide.png" alt="passwordView">
+                        </div>
+                        <div class="user_terms">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">İstifadəçi şərtlərini</label>
+                            <span>qəbul edirəm</span>
+                        </div>
+                        <button class="submit_btn" type="submit">Qeydiyyatdan keç</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_bg">
+            <div class="container">
+                <div class="footer_content">
+                    <a href="">Haqqımızda</a>
+                    <a href="">Qaydalar</a>
+                    <a href="">İstifadəçi şərtləri</a>
+                    <a href="">Tez -tez verilən suallar</a>
+                    <div class="mail_adress">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:info@tears.az">info@tears.az</a>
+                    </div>
+                    <div class="phone_number">
+                        <p class="f_elaqe">Əlaqə</p>
+                        <div class="calling">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+994125467876">(012) 546 78 76</a>
+                        </div>
+                    </div>
+                    <div class="footer_social">
+                        <div class="f_social_icon"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                        <div class="f_social_icon"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="f_social_icon"><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+                    </div>
+                </div>
+                <p class="copy_right">Bütün hüqüqlar Teras.az saytına məxsusdur © <span class="copy_right_date"></span></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../nav.js"></script>
+    <script src="../header.js"></script>
+    <script src="../app.js"></script>
+</body>
+
+</html>
