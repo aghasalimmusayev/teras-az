@@ -1,0 +1,188 @@
+{
+    "evler": [
+        {
+            "id": "e1a9f001",
+            "tip": "Gündəlik kirayə",
+            "qiymet": 65,
+            "unvan": "20 Yanvar m, Yasamal rayonu",
+            "otaq": 2,
+            "sahe": 80,
+            "mertebe": "5/9",
+            "elan_date": "2025-05-16",
+            "sekil": "https://i.imgur.com/ya6qf32.jpg",
+            "agentlik": "Henry Group",
+            "ferqli": [
+                "diamond",
+                "king",
+                "check",
+                "percent"
+            ]
+        },
+        {
+            "id": "e1a9f002",
+            "tip": "Satış",
+            "qiymet": 181200,
+            "unvan": "Binəqədi r., Azadlıq m.",
+            "otaq": 3,
+            "sahe": 95,
+            "mertebe": "7/12",
+            "elan_date": "2025-04-22",
+            "sekil": "https://i.imgur.com/T4rJv0k.jpg",
+            "agentlik": "SR Construction",
+            "ferqli": [
+                "check"
+            ]
+        },
+        {
+            "id": "e1a9f003",
+            "tip": "Kirayə",
+            "qiymet": 850,
+            "unvan": "Nərimanov m., H.Əliyev pr.",
+            "otaq": 3,
+            "sahe": 100,
+            "mertebe": "4/10",
+            "elan_date": "2025-03-05",
+            "sekil": "https://i.imgur.com/Z3D1YJu.jpg",
+            "agentlik": "Monolit Real Estate",
+            "ferqli": [
+                "percent"
+            ]
+        },
+        {
+            "id": "e1a9f004",
+            "tip": "Satış",
+            "qiymet": 295000,
+            "unvan": "Xətai r., Ağ Şəhər",
+            "otaq": 4,
+            "sahe": 135,
+            "mertebe": "10/16",
+            "elan_date": "2025-05-10",
+            "sekil": "https://i.imgur.com/n7BqJ1G.jpg",
+            "agentlik": "Signature Realty",
+            "ferqli": [
+                "diamond",
+                "check"
+            ]
+        },
+        {
+            "id": "e1a9f005",
+            "tip": "Bağ evi",
+            "qiymet": 320000,
+            "unvan": "Mərdəkan qəs., əsas yoldan 200m",
+            "otaq": 5,
+            "sahe": 200,
+            "mertebe": "1",
+            "elan_date": "2025-01-15",
+            "sekil": "https://i.imgur.com/2L9E7iT.jpg",
+            "agentlik": "Home Haven Realty",
+            "ferqli": [
+                "king",
+                "check"
+            ]
+        },
+        {
+            "id": "e1a9f006",
+            "tip": "Gündəlik kirayə",
+            "qiymet": 90,
+            "unvan": "İnşaatçılar m., Yasamal rayonu",
+            "otaq": 2,
+            "sahe": 75,
+            "mertebe": "3/9",
+            "elan_date": "2025-02-02",
+            "sekil": "https://i.imgur.com/zmTTeEZ.jpg",
+            "agentlik": "Kings Home",
+            "ferqli": [
+                "percent"
+            ]
+        },
+        {
+            "id": "e1a9f007",
+            "tip": "Kirayə",
+            "qiymet": 700,
+            "unvan": "Memar Əcəmi m., 3-cü mikrorayon",
+            "otaq": 2,
+            "sahe": 70,
+            "mertebe": "8/12",
+            "elan_date": "2025-04-01",
+            "sekil": "https://i.imgur.com/4fZ3dpE.jpg",
+            "agentlik": "The Address Luxury",
+            "ferqli": []
+        },
+        {
+            "id": "e1a9f008",
+            "tip": "Satış",
+            "qiymet": 120000,
+            "unvan": "Xalqlar Dostluğu m., Nizami r.",
+            "otaq": 2,
+            "sahe": 65,
+            "mertebe": "2/9",
+            "elan_date": "2025-03-12",
+            "sekil": "https://i.imgur.com/DiySbdH.jpg",
+            "agentlik": "Henry Group",
+            "ferqli": [
+                "diamond"
+            ]
+        },
+        {
+            "id": "e1a9f009",
+            "tip": "Premium satış",
+            "qiymet": 450000,
+            "unvan": "Səbail r., İçərişəhər",
+            "otaq": 5,
+            "sahe": 210,
+            "mertebe": "5/7",
+            "elan_date": "2025-04-28",
+            "sekil": "https://i.imgur.com/8MTxAYE.jpg",
+            "agentlik": "Signature Realty",
+            "ferqli": [
+                "king",
+                "diamond"
+            ]
+        },
+        {
+            "id": "e1a9f010",
+            "tip": "Gündəlik kirayə",
+            "qiymet": 75,
+            "unvan": "Nizami m., Fəvvarələr Meydanı",
+            "otaq": 1,
+            "sahe": 50,
+            "mertebe": "2/5",
+            "elan_date": "2025-05-25",
+            "sekil": "https://i.imgur.com/yzAKHyt.jpg",
+            "agentlik": "Home Haven Realty",
+            "ferqli": []
+        },
+        {
+            "id": "e1a9f011",
+            "tip": "Yeni tikili",
+            "qiymet": 230000,
+            "unvan": "Yasamal r., H.Cavid pr.",
+            "otaq": 3,
+            "sahe": 100,
+            "mertebe": "8/16",
+            "elan_date": "2025-06-10",
+            "sekil": "https://i.imgur.com/B9Re4zT.jpg",
+            "agentlik": "Kings Home",
+            "ferqli": [
+                "check"
+            ]
+        },
+        {
+            "id": "e1a9f012",
+            "tip": "Bağ evi",
+            "qiymet": 500000,
+            "unvan": "Bilgəh, dənizə yaxın",
+            "otaq": 6,
+            "sahe": 300,
+            "mertebe": "2",
+            "elan_date": "2025-07-19",
+            "sekil": "https://i.imgur.com/MkkPqR9.jpg",
+            "agentlik": "Monolit Real Estate",
+            "ferqli": [
+                "diamond",
+                "king",
+                "check"
+            ]
+        }
+    ]
+}
