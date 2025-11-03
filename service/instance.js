@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios from "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js";
 
 const axiosInstance = axios({
-    baseUrl: import.meta.BASE_URL,
+    baseURL: "https://terasdata.onrender.com",
     timeout: 10000,
     headers: { "Content-Type": "application/json" }
 })

@@ -1,4 +1,4 @@
-import axiosInstance from "./instance";
+import axiosInstance from "./instance.js";
 
 async function getData() {
     try {
@@ -7,7 +7,8 @@ async function getData() {
     }
     catch (err) {
         console.log('Melumat gelmedi, Xeta: ' + err);
+        return []
     }
 }
 
-export { getData };
+export default getData
