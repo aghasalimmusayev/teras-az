@@ -1,11 +1,14 @@
 const vipElanlar = document.querySelector("#vipElanlar .swiper-wrapper")
+if (!vipElanlar) console.log('VipElanlar tapilmadi')
 
 import getData from './service/service.js'
 
 let data;
-console.log(data);
+
+getVipElanlar()
 async function getVipElanlar() {
     data = await getData()
+    console.log(data);
     vipElanlar.innerHTML = ''
     data.forEach(ev => {
         vipElanlar.innerHTML += `
@@ -58,7 +61,6 @@ async function getVipElanlar() {
         `
     });
 }
-getVipElanlar()
 
 
 document.querySelector('.copy_right_date').innerHTML = new Date().getFullYear()
