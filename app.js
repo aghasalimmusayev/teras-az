@@ -16,7 +16,7 @@ async function getVipElanlar() {
             <div class="swiper-slide">
                 <div class="ev">
                     <div class="ev_img">
-                        <img src=${ev.sekil}
+                        <img src="${ev.sekil}"
                             alt="Ev şəkili">
                         <div class="ferqli_ozellikler">
                             <div class="ferqli_top">
