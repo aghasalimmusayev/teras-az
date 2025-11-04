@@ -1935,27 +1935,28 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
     <script src="./nav.js"></script>
     <script src="./header.js"></script>
+    <script src="./swipers/swiper.js"></script>
     <script type="module" src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper1 = new Swiper(".mySwiper1", {
-            slidesPerView: 4,
-            grid: { rows: 2, },
-            spaceBetween: 22,
-            // loop: true,
-            navigation: {
-                nextEl: ".mySwiper1_next",
-                prevEl: ".mySwiper1_prev",
-            },
-            breakpoints: {
-                320: { slidesPerView: 1, spaceBetween: 8, grid: { rows: 1 } },
-                375: { slidesPerView: 2, spaceBetween: 8, grid: { rows: 1 } },
-                480: { slidesPerView: 2, spaceBetween: 8, grid: { rows: 1 } },
-                860: { slidesPerView: 3, spaceBetween: 15, grid: { rows: 2 } },
-                992: { slidesPerView: 3, spaceBetween: 15, grid: { rows: 2 } },
-                1200: { slidesPerView: 4, spaceBetween: 20, grid: { rows: 2 } },
-            }
-        });
+        // var swiper1 = new Swiper(".mySwiper1", {
+        //     slidesPerView: 4,
+        //     grid: { rows: 2, },
+        //     spaceBetween: 22,
+        //     // loop: true,
+        //     navigation: {
+        //         nextEl: ".mySwiper1_next",
+        //         prevEl: ".mySwiper1_prev",
+        //     },
+        //     breakpoints: {
+        //         320: { slidesPerView: 1, spaceBetween: 8, grid: { rows: 1 } },
+        //         375: { slidesPerView: 2, spaceBetween: 8, grid: { rows: 1 } },
+        //         480: { slidesPerView: 2, spaceBetween: 8, grid: { rows: 1 } },
+        //         860: { slidesPerView: 3, spaceBetween: 15, grid: { rows: 2 } },
+        //         992: { slidesPerView: 3, spaceBetween: 15, grid: { rows: 2 } },
+        //         1200: { slidesPerView: 4, spaceBetween: 20, grid: { rows: 2 } },
+        //     }
+        // });
         var swiper2 = new Swiper(".mySwiper2", {
             slidesPerView: 4,
             grid: { rows: 2, },

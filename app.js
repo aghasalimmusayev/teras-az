@@ -1,5 +1,6 @@
 const vipElanlar = document.querySelector("#vipElanlar .swiper-wrapper")
-if (!vipElanlar) console.log('VipElanlar tapilmadi')
+// if (!vipElanlar) console.log('VipElanlar tapilmadi')
+import { initVipSwiper } from './swipers/swiper.js';
 
 import getData from './service/service.js'
 
@@ -60,6 +61,7 @@ async function getVipElanlar() {
             </div>
         `
     });
+    initVipSwiper()
 }
 
 
