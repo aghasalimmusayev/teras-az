@@ -1,0 +1,25 @@
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+.loader {
+    width: fit-content;
+    font-family: sans-serif;
+    font-size: 28px;
+    padding-bottom: 8px;
+    background: linear-gradient(currentColor 0 0) 0 100%/0% 2px no-repeat;
+    animation: l2 2s linear infinite;
+}
+
+.loader:before {
+    content: "Məlumatlar yüklənir..."
+}
+
+@keyframes l2 {
+    to {
+        background-size: 100% 2px
+    }
+}
