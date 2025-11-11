@@ -88,14 +88,47 @@ export function initAgentlikSwiper() {
         swiperInstances.agentlik.destroy(true, true);
     }
     swiperInstances.agentlik = new Swiper(".mySwiper5", {
-        slidesPerView: 4,
-        grid: { rows: 2 },
+        slidesPerView: 'auto',
         spaceBetween: 22,
+        slidesPerGroup: 1,
+        centeredSlides: false,
+        freeMode: false,
         navigation: {
             nextEl: ".mySwiper5_next",
             prevEl: ".mySwiper5_prev",
         },
-        breakpoints: commonBreakpoints
+        breakpoints: {
+            320: {
+                slidesPerView: 'auto',
+                spaceBetween: 8,
+                grid: { rows: 1, fill: 'row' }
+            },
+            375: {
+                slidesPerView: 'auto',
+                spaceBetween: 8,
+                grid: { rows: 1, fill: 'row' }
+            },
+            480: {
+                slidesPerView: 'auto',
+                spaceBetween: 8,
+                grid: { rows: 1, fill: 'row' }
+            },
+            860: {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+                grid: { rows: 2, fill: 'row' }
+            },
+            992: {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+                grid: { rows: 2, fill: 'row' }
+            },
+            1200: {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                grid: { rows: 2, fill: 'row' }
+            },
+        }
     });
     return swiperInstances.agentlik;
 }

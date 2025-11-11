@@ -4,12 +4,13 @@ const agentlikler = document.querySelector("#agentlikler .swiper-wrapper")
 const sonElanlar = document.querySelector("#sonElanlar .swiper-wrapper")
 const yasayisElanlar = document.querySelector("#yasayisKompleksleri .swiper-wrapper")
 const popAxtaris = document.querySelector(".pop_axtaris_content")
+const main = document.querySelector('.mainLoader')
+const scrollBtn = document.querySelector('#topScrollBtn')
 
 import { initAgentlikSwiper, initPremiumSwiper, initSonSwiper, initVipSwiper, initYasayisSwiper } from './swipers/swiper.js';
-
 import { getAgentlik, getData, getPop, getSon, getYasayis } from './service/service.js'
 
-vipElanlar.innerHTML = `<div class="loading"><div class="loader"></div></div>`
+main.innerHTML = `<div class="loading"><div class="loader"></div></div>`
 
 let data;
 let popData;
@@ -33,11 +34,33 @@ async function recieveData() {
     getSonElanlar()
     getYasayisElan()
 }
-recieveData()
+const myinterval = setInterval(async () => {
+    //! Bu interval muveqqeti olaraq API fake oldugu ucun istifade olunur, 
+    //! back olandan sonra sadece <<--recieveData()-->> bu function-i cagirmaq kifayetdi
+    try {
+        await recieveData()
+        if (data && data.length > 0) {
+            clearInterval(myinterval)
+            console.log(`Sorgu tamamlandi: Data length ${data.length}`);
+        }
+        else console.log("Data gelmedi, Sorgu dayandirildi");
+    } catch (error) {
+        console.log('Sorguda xeta oldu: ' + error);
+    }
+}, 3000);
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 800) scrollBtn.style.opacity = 1
+    else scrollBtn.style.opacity = 0
+})
+window.goToTop = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 function getVipElanlar() {
     vipElanlar.innerHTML = ''
     if (data && data.length > 0) {
+        main.innerHTML = ''
         data.forEach(ev => {
             vipElanlar.innerHTML +=
                 `<div class="swiper-slide">
@@ -89,7 +112,7 @@ function getVipElanlar() {
         });
     }
     else {
-        vipElanlar.innerHTML = `<div class="loading"><div class="loader"></div></div>`
+        main.innerHTML = `<div class="loading"><div class="loader"></div></div>`
     }
     initVipSwiper()
 }

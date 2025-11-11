@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Source/home-icon.webp" type="image/svg+xml" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./umumiCSS/colors.css">
     <link rel="stylesheet" href="./umumiCSS/font.css">
     <link rel="stylesheet" href="./umumiCSS/footer.css">
     <link rel="stylesheet" href="./umumiCSS/header.css">
@@ -19,7 +18,8 @@
     <link rel="stylesheet" href="./EsasSehife/main.css">
     <link rel="stylesheet" href="./EsasSehife/popAxtarSlider.css">
     <link rel="stylesheet" href="./EsasSehife/yasayisSlider.css">
-    <link rel="stylesheet" href="./loader.css">
+    <link rel="stylesheet" href="./EsasSehife/loader.css">
+    <link rel="stylesheet" href="./umumiCSS/colors.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -242,6 +242,12 @@
 
     <main>
 
+        <div class="mainLoader">
+            <div class="loading">
+                <div class="loader"></div>
+            </div>
+        </div>
+
         <div class="container">
             <section id="bigBtns">
                 <div class="bigBtns_content">
@@ -370,6 +376,10 @@
             </section>
         </div>
 
+        <button id="topScrollBtn" onclick="goToTop()">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
     </main>
 
     <footer>
@@ -409,7 +419,6 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
     <script src="./nav.js"></script>
     <script src="./header.js"></script>
-    <script src="./swipers/swiper.js"></script>
     <script type="module" src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"

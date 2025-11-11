@@ -30,7 +30,25 @@
         height: 48px;
     }
 }
-.gundelik_evler:hover, .ipoteka_evler:hover{background-color: #f7f6f6;}
+.gundelik_evler:hover, .ipoteka_evler:hover{background-color: var(--bg-color18);}
+#topScrollBtn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color3);
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--txt-color4);
+    outline: none;
+    transition: .3s;
+    cursor: pointer;
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    z-index: 8888;
+}
+#topScrollBtn:hover{background-color:var(--bg_color); color: var(--txt-color2);}
   
 @media (min-width: 860px) {
     #bigBtns{padding: 0;}
@@ -47,5 +65,13 @@
             width: 116px;
             height: 70px;
         }
+    }
+    #topScrollBtn{
+        width: 45px;
+        height: 45px;
+        border: 3px solid var(--border-color3);
+        font-size: 24px;
+        bottom: 30px;
+        right: 5%;
     }
 }
