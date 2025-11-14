@@ -47,7 +47,7 @@ const myinterval = setInterval(async () => {
     } catch (error) {
         console.log('Sorguda xeta oldu: ' + error);
     }
-}, 3000);
+}, 4000);
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 800) scrollBtn.style.opacity = 1
@@ -292,4 +292,5 @@ function getYasayisElan() {
     initYasayisSwiper()
 }
 
-document.querySelector('.copy_right_date').innerHTML = new Date().getFullYear()
+let tarix = new Date().getFullYear()
+document.querySelector('.copy_right_date').innerHTML = '© ' + tarix

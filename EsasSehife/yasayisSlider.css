@@ -71,7 +71,7 @@
 }
 .bina_park_info {padding: 10px;}
 .bina_park_qiymet {
-  font: 600 16px "Poppins", sans-serif;
+  font: 500 14px "Poppins", sans-serif;
   line-height: 100%;
   letter-spacing: 0%;
   height: 20px;
@@ -84,6 +84,10 @@
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .bina_park_sirket,
 .bina_park_unvan,
@@ -94,6 +98,10 @@
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 #yasayisKompleksleri .ferqli_ozellikler{
   position: absolute;
@@ -136,25 +144,29 @@
   border: none;
   border-radius: 30px;
   padding: 0 14px;
-  span {
-    display: flex;
-    align-items: center;
-    height: 24px;
-    padding: 0;
-    text-align: center;
-    font: 400 10px "Poppins", sans-serif;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: var(--txt-color6);
-  }
-  i{
-    color: var(--bg-color7);
-    transform: rotate(135deg);
-    margin-right: 7px;
-    font-size: 12px;
-    font-weight: thin;
-  }
+}
+#yasayisKompleksleri .ferqli_bottom_left span {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  padding: 0;
+  text-align: center;
+  font: 400 10px "Poppins", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: var(--txt-color6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+#yasayisKompleksleri .ferqli_bottom_left i{
+  color: var(--bg-color7);
+  transform: rotate(135deg);
+  margin-right: 7px;
+  font-size: 12px;
+  font-weight: thin;
 }
 #yasayisKompleksleri .ferqli_bottom_right{display: none;}
 #yasayisKompleksleri .check_icon {

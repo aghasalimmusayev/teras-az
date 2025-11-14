@@ -173,19 +173,29 @@
   justify-content: space-between;
   align-items: center;
 }
+.ferqli_ozellikler .ferqli_bottom .ferqli_bottom_left {
+  width: 65%;
+  overflow: hidden;
+}
 .ferqli_ozellikler .ferqli_bottom .ferqli_bottom_left span {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: none;
+  text-align: center;
   background-color: var(--bg-color3);
   padding: 3px 14px;
   height: 22px;
-  border: none;
   border-radius: 30px;
-  text-align: center;
-  font: 400 10px "Poppins", sans-serif;
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;
+  font: 400 10px "Poppins", sans-serif;
   color: var(--txt-color6);
 }
+
 .ferqli_ozellikler .ferqli_bottom .ferqli_bottom_right {
   display: flex;
   align-items: center;
@@ -292,6 +302,10 @@
   .ferqli_ozellikler .diamond_icon {
     width: 26px;
     height: 26px;
+  }
+  .ferqli_ozellikler .ferqli_bottom .ferqli_bottom_left {
+    width: fit-content;
+    max-width: 65%;
   }
   .ferqli_ozellikler .ferqli_bottom .ferqli_bottom_right .percent_icon,
   .ferqli_ozellikler .ferqli_bottom .ferqli_bottom_right .check_icon {

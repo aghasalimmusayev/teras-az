@@ -14,6 +14,8 @@ menu.onclick = function(){
         menu.style.right = "5%"
         menu.style.left = "auto"
         menu.style.backgroundColor = "var(--color4)"
+        document.body.style.overflow = 'hidden'
+        document.body.style.height = '100vh'
     }
     else{
         links.style.left = "-100%";
@@ -22,6 +24,8 @@ menu.onclick = function(){
         menu.style.right = "auto"
         menu.style.left = "5%"
         menu.style.backgroundColor = "transparent"
+        document.body.style.overflow = ''
+        document.body.style.height = ''
     }
 }
 

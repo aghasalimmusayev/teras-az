@@ -36,20 +36,19 @@
     height: 35px;
     border-radius: 50%;
     border: 2px solid var(--border-color3);
-    background-color: transparent;
+    background-color: var(--bg_color);
     font-size: 20px;
-    color: var(--txt-color4);
+    color: var(--txt-color);
     outline: none;
     transition: .3s;
     cursor: pointer;
     opacity: 0;
     position: fixed;
-    bottom: 20px;
-    right: 8px;
+    bottom: 50px;
+    right: 5%;
     z-index: 8888;
 }
-#topScrollBtn:hover{background-color:var(--bg_color); color: var(--txt-color2);}
-  
+
 @media (min-width: 860px) {
     #bigBtns{padding: 0;}
     #bigBtns .bigBtns_content{transform: translateY(-50%);}
@@ -69,9 +68,12 @@
     #topScrollBtn{
         width: 45px;
         height: 45px;
+        background-color: transparent;
         border: 3px solid var(--border-color3);
+        color: var(--txt-color4);
         font-size: 24px;
         bottom: 30px;
         right: 5%;
     }
+    #topScrollBtn:hover{background-color:var(--bg_color); color: var(--txt-color);}
 }
